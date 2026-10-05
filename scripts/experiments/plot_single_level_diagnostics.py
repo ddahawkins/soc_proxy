@@ -54,7 +54,7 @@ import pandas as pd
 #   PROXY_WEIGHT = 0.5   -> only W_P = 0.5
 #   PROXY_WEIGHT = 0.25  -> only W_P = 0.25
 #   PROXY_WEIGHT = None  -> pool all proxy weights
-PROXY_WEIGHT = 1
+PROXY_WEIGHT = None
 
 
 # Capacity-error target.
@@ -306,7 +306,7 @@ CONFIG_LABEL = configuration_label()
 
 RESULTS_TABLE_PATH = RESULTS_DIR / f"single_predictor_diagnostics_{CONFIG_LABEL}.csv"
 
-FIGURE_PATH = RESULTS_DIR / f"single_predictor_diagnostics_{CONFIG_LABEL}.png"
+FIGURE_PATH = RESULTS_DIR / f"single_predictor_diagnostics_{CONFIG_LABEL}.pdf"
 
 
 # =====================================================================
@@ -655,7 +655,7 @@ heatmap = heatmap.reindex(columns=WINDOW_LABELS)
 # =====================================================================
 
 fig, ax = plt.subplots(
-    figsize=(11, 8),
+    figsize=(11, 7),
 )
 
 values = heatmap.to_numpy(dtype=float)
@@ -740,7 +740,7 @@ colourbar = fig.colorbar(
     ax=ax,
 )
 
-colourbar.set_label("Single-predictor adjusted $R^2$")
+colourbar.set_label("Explanatory power, $R^2$, for LDES capacity error")
 
 
 # ---------------------------------------------------------------------
@@ -754,11 +754,6 @@ else:
 
 error_title = "signed" if CAPACITY_ERROR == "signed" else "absolute"
 
-ax.set_title(
-    "Single-predictor explanatory power for "
-    f"{error_title} LDES capacity error\n"
-    f"({weight_title})"
-)
 
 
 # ---------------------------------------------------------------------
