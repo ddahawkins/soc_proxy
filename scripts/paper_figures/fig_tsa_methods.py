@@ -505,12 +505,12 @@ def make_figure(
     }
 
     rc = {
-        "font.size": 8.5,
+        "font.size": 10,
         "axes.labelsize": 9,
         "axes.titlesize": 9.5,
-        "xtick.labelsize": 8,
-        "ytick.labelsize": 8,
-        "legend.fontsize": 8,
+        "xtick.labelsize": 9,
+        "ytick.labelsize": 9,
+        "legend.fontsize": 10,
         "axes.spines.top": False,
         "axes.spines.right": False,
         "pdf.fonttype": 42,
@@ -581,22 +581,22 @@ def make_figure(
 
         fig.text(
             0.565,
-            0.952,
+            0.94,
             (
                 "Markers show medians; whiskers show Q25-Q75.\n"
-                r"Within each method: $W_P = 0,\ 0.5,\ 1$ "
+                r"Within each method: $W_{CDS} = 0,\ 0.5,\ 1$ "
                 r"from left to right."
             ),
             ha="center",
             va="top",
-            fontsize=7.5,
+            fontsize=10,
             color="0.4",
         )
 
         fig.subplots_adjust(
             left=0.15,
             right=0.98,
-            top=0.88,
+            top=0.86,
             bottom=0.08,
             hspace=0.25,
         )

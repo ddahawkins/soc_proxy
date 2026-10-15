@@ -443,8 +443,8 @@ def build_wp_offsets(
 def legend_label(weight: float) -> str:
     """Use an explicit label for the no-proxy/original TSA cases."""
     if np.isclose(weight, 0.0):
-        return "$W_P = 0$ (Original TSA)"
-    return rf"$W_P = {weight:g}$"
+        return "$W_{CDS} = 0$ (Original TSA)"
+    return "$W_{CDS}$ " + f"$= {weight:g}$"
 
 
 def add_metric_panel(
@@ -586,7 +586,7 @@ def make_figure(
         "axes.labelsize": 11,
         "xtick.labelsize": 10,
         "ytick.labelsize": 10,
-        "legend.fontsize": 9.5,
+        "legend.fontsize": 10,
         "axes.spines.top": False,
         "axes.spines.right": False,
         "pdf.fonttype": 42,
@@ -674,11 +674,11 @@ def make_figure(
 
         fig.text(
             AXES_CENTER,
-            0.957,
+            0.95,
             (r"Markers show medians; whiskers show Q25-Q75."),
             ha="center",
             va="top",
-            fontsize=9.2,
+            fontsize=10,
             color="0.38",
         )
 

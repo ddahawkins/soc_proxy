@@ -84,7 +84,7 @@ PNG_DPI = 300
 
 # visual settings
 
-FIGSIZE = (7.6, 7.6)
+FIGSIZE = (6, 6)
 
 TITLE_FONTSIZE = 15
 

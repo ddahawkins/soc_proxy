@@ -226,7 +226,7 @@ OUTPUT_DIR = Path("results/figures/fig_binding_event_selector")
 
 
 
-DEFAULT_EXPERIMENT = "NL_2008"
+DEFAULT_EXPERIMENT = "NL_2014"
 
 
 
@@ -1782,7 +1782,7 @@ def annotate_selector_colour_families(
 
         anchor_timestamp = pd.Timestamp(group["visual_event_anchor"].iloc[0])
 
-        labels_by_key[key] = f"Dominant event {anchor_timestamp:%Y-%m-%d}"
+        labels_by_key[key] = f"Dominant SDE {anchor_timestamp:%Y-%m-%d}"
 
 
 
@@ -2496,7 +2496,7 @@ def plot_proxy_overlay_figure(
         zorder=7,
     )
     ax.annotate(
-        "persistent SDE identified\nfrom high-margin tail",
+        "Persistent SDE identified\nfrom high-margin tail",
         xy=(
             pd.Timestamp(terminal_event_timestamp),
             representative_peak,
@@ -2568,7 +2568,7 @@ def plot_proxy_overlay_figure(
         label = (
             rf"$m_{{\mathrm{{event}}}}={100*margin:.1f}\%$"
             if is_persistent_match
-            else rf"$m$={100*margin:.1f}\%"
+            else rf"$m$={100*margin:.1f}%"
         )
 
         ax.annotate(

@@ -336,8 +336,8 @@ def build_replicate_jitter(
 def legend_label(weight: float) -> str:
     """Use an explicit label for the no-proxy/original TSA cases."""
     if np.isclose(weight, 0.0):
-        return "$W_P = 0$\n(Original TSA)"
-    return rf"$W_P = {weight:g}$"
+        return "$W_{CDS} = 0$\n(Original TSA)"
+    return "$W_{CDS}$ "+f"$= {weight:g}$"
 
 
 def make_figure(

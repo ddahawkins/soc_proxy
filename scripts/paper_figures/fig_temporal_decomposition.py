@@ -1,6 +1,6 @@
 """Create the temporal-decomposition sensitivity figure.
 
-The figure compares reference SoC Proxy delta error across decomposition
+The figure compares reference CDS error across decomposition
 methods and smoothing timescales for 10-year sensitivity cases.
 
 Visual encoding
@@ -565,7 +565,7 @@ def make_figure(
         "axes.titlesize": 9.5,
         "xtick.labelsize": 8,
         "ytick.labelsize": 8,
-        "legend.fontsize": 8,
+        "legend.fontsize": 10,
         "axes.spines.top": False,
         "axes.spines.right": False,
         "pdf.fonttype": 42,
@@ -589,7 +589,7 @@ def make_figure(
             method_colours=method_colours,
         )
 
-        ax.set_ylabel("SoC Proxy delta nRMSE (%)")
+        ax.set_ylabel("CDS nRMSE (%)")
         ax.set_xlabel("Smoothing timescale (hours)")
         ax.set_xscale("log")
         ax.set_xticks(horizons)
@@ -644,7 +644,7 @@ def make_figure(
             "Markers show medians; whiskers show Q25-Q75.",
             ha="center",
             va="top",
-            fontsize=7.5,
+            fontsize=10,
             color="0.4",
         )
 

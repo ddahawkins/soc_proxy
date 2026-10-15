@@ -1241,7 +1241,7 @@ def plot_continuous_validation(
     nl_metrics = continuous_metrics(nl_truth / 100.0, nl_oof)
     be_metrics = continuous_metrics(be_truth / 100.0, be_pred)
 
-    fig, ax = plt.subplots(figsize=(5.4, 5.0))
+    fig, ax = plt.subplots(figsize=(5, 5.0))
 
     # One-to-one reference line. No acceptability bands are shown here because
     # this figure reports the threshold-independent continuous prediction.
@@ -1338,7 +1338,7 @@ def plot_two_stage_mapping(calibrator, signed_range: np.ndarray, tolerance_pp: f
 
 
 
-    fig, ax = plt.subplots(figsize=(6.5, 4.2))
+    fig, ax = plt.subplots(figsize=(5, 5))
 
     ax.plot(grid_pp, p[:, 0], label="Under-investment", color=cmap(PLASMA_UNDER), linewidth=2)
 
@@ -1378,7 +1378,7 @@ def plot_gaussian_holdout(mu: np.ndarray, sigma: np.ndarray, tolerance_pp: float
 
 
 
-    fig, ax = plt.subplots(figsize=(6.5, 4.2))
+    fig, ax = plt.subplots(figsize=(5, 5))
 
     ax.scatter(x, p[order, 0], s=16, alpha=0.55, label="Under-investment", color=cmap(PLASMA_UNDER))
 
