@@ -8,9 +8,7 @@ Scientific design
 
 This script assumes the THREE signal predictors have already been selected using
 
-Netherlands (NL) development data. Edit ``PREDICTORS`` below to the selected
-
-triplet. Proxy weight W_P is always added as a fourth predictor, centred at 0.5.
+Netherlands (NL) development data. Proxy weight W_P is always added as a fourth predictor, centred at 0.5.
 
 
 
@@ -89,12 +87,6 @@ Important
 All validation folds are grouped by weather chronology. Cases with different k
 
 or W_P but the same underlying chronology are never split across train/test.
-
-
-
-Run from the repository root, e.g.:
-
-    pixi run python scripts/paper_figures/diagnostic_final_nl_be_with_gaussian.py
 
 """
 

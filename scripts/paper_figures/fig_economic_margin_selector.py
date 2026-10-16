@@ -2,20 +2,6 @@
 
 
 
-Updates relative to the earlier draft:
-
-- each chronology receives its own colour from the plasma colormap;
-
-- chronology labels are shown explicitly in a legend;
-
-- q80 and q90 crossings remain highlighted but the full trajectories are drawn
-
-  without point markers for a cleaner visual hierarchy;
-
-- the figure uses a square aspect ratio and slightly larger text.
-
-
-
 Run from the repository root with:
 
 

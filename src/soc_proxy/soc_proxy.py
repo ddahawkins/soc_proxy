@@ -92,7 +92,7 @@ def generate_soc_proxy(
         before renewable/storage balancing.
     soc_decomposition
         Mapping with ``method`` and ``time_horizon_hours``. Defaults to a
-        24-hour FFT low-pass split.
+        24-hour Gaussian filter.
     timestamp_col
         Optional timestamp column. If omitted, ``df`` must use a DatetimeIndex.
     margin_mode
@@ -528,7 +528,7 @@ def _normalise_decomposition(
 ) -> dict[str, object]:
     if definition is None:
         return {
-            "method": "fft_lowpass",
+            "method": "gaussian",
             "time_horizon_hours": 24.0,
         }
 
