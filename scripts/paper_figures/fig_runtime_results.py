@@ -52,7 +52,7 @@ from matplotlib.ticker import FixedLocator, FixedFormatter, NullFormatter
 # Figure-specific configuration
 # ---------------------------------------------------------------------------
 
-DEFAULT_SOURCE_DIR = Path("results/2_5_10_year")
+DEFAULT_SOURCE_DIR = Path("results/results_2_5_10_year")
 DEFAULT_OUTPUT_DIR = Path("results/figures/fig_runtime_results")
 OUTPUT_STEM = "fig_runtime_results"
 

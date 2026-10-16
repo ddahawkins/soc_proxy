@@ -19,7 +19,7 @@ Visual encoding
 - vertical whisker: interquartile range (Q25-Q75)
 
 Source:
-    results/2_5_10_year/
+    results/results_2_5_10_year/
         parameters.parquet
         investment_metrics.parquet
 
@@ -42,7 +42,7 @@ from matplotlib.lines import Line2D
 from matplotlib.ticker import MultipleLocator
 
 
-DEFAULT_SOURCE_DIR = Path("results/2_5_10_year")
+DEFAULT_SOURCE_DIR = Path("results/results_2_5_10_year")
 DEFAULT_OUTPUT_DIR = Path("results/figures/fig_tsa_methods_iqr")
 OUTPUT_STEM = "fig_tsa_methods_iqr"
 

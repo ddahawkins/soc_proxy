@@ -15,7 +15,7 @@ Then reads costs.parquet and:
     h2_salt_cavern + electrolyser + h2_elec_conversion
 
 Source:
-    results/2_5_10_year/
+    results/results_2_5_10_year/
         parameters.parquet
         costs.parquet
 """
@@ -28,7 +28,7 @@ import numpy as np
 import pandas as pd
 
 
-RESULTS_DIR = Path("results/2_5_10_year")
+RESULTS_DIR = Path("results/results_2_5_10_year")
 
 TARGET_HORIZON_YEARS = 10.0
 HORIZON_TOLERANCE_YEARS = 0.10

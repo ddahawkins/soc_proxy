@@ -160,7 +160,7 @@ from sklearn.preprocessing import StandardScaler
 
 
 
-RESULTS_DIR = Path("results") / "2_5_10_year"
+RESULTS_DIR = Path("results") / "results_2_5_10_year"
 
 OUTPUT_DIR = RESULTS_DIR / "diagnostic" / "final_fixed_predictor"
 

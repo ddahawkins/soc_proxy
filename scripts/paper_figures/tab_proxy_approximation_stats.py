@@ -22,7 +22,7 @@ that assumption before collapsing to one row per unique weather set.
 
 Source::
 
-    results/2_5_10_year/
+    results/results_2_5_10_year/
         parameters.parquet
         signal_metrics.parquet
 
@@ -46,7 +46,7 @@ import numpy as np
 import pandas as pd
 
 
-DEFAULT_SOURCE_DIR = Path("results/2_5_10_year")
+DEFAULT_SOURCE_DIR = Path("results/results_2_5_10_year")
 DEFAULT_OUTPUT_DIR = Path("results/tables/table_ref_proxy_quality")
 
 TARGET_HORIZON_YEARS = 10.0

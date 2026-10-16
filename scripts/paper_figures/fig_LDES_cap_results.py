@@ -1,7 +1,7 @@
 """Create Figure 3: LDES capacity error against representative-period count.
 
 The figure is intentionally narrow in scope:
-- source: results/2_5_10_year/*.parquet
+- source: results/results_2_5_10_year/*.parquet
 - horizon: 10-year runs only
 - clustering method: k-means
 - representation method: medoid
@@ -31,7 +31,7 @@ from matplotlib.ticker import MultipleLocator
 # Figure-specific configuration
 # ---------------------------------------------------------------------------
 
-DEFAULT_SOURCE_DIR = Path("results/2_5_10_year")
+DEFAULT_SOURCE_DIR = Path("results/results_2_5_10_year")
 DEFAULT_OUTPUT_DIR = Path("results/figures/fig_LDES_cap_results")
 OUTPUT_STEM = "fig_LDES_cap_results"
 

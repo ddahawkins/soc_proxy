@@ -108,7 +108,7 @@ from sklearn.preprocessing import StandardScaler
 # Configuration
 # =============================================================================
 
-RESULTS_DIR = Path("results") / "2_5_10_year"
+RESULTS_DIR = Path("results") / "results_2_5_10_year"
 OUTPUT_DIR = RESULTS_DIR / "diagnostic" / "paper_figures_case_9657"
 
 PARAMETERS_PATH = RESULTS_DIR / "parameters.parquet"

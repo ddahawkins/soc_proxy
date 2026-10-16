@@ -26,7 +26,7 @@ The k values are deliberately pooled within each horizon / W_P channel, but
 the subset is configurable from the command line.
 
 Source:
-    results/2_5_10_year/*.parquet
+    results/results_2_5_10_year/*.parquet
 
 Outputs:
     results/figures/fig_horizon_results_iqr/
@@ -51,7 +51,7 @@ from matplotlib.ticker import MultipleLocator
 # Figure-specific configuration
 # ---------------------------------------------------------------------------
 
-DEFAULT_SOURCE_DIR = Path("results/2_5_10_year")
+DEFAULT_SOURCE_DIR = Path("results/results_2_5_10_year")
 DEFAULT_OUTPUT_DIR = Path("results/figures/fig_horizon_results_iqr")
 OUTPUT_STEM = "fig_horizon_results_iqr"
 
