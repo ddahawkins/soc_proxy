@@ -1,0 +1,7 @@
+model,term,coefficient
+M0_wp_only,W_P,0.3657645961069645
+M1_wp_x_nmbe,W_P,0.3657645961069646
+M1_wp_x_nmbe,W_P x z(proxy nMBE),-0.05028571195668267
+M2_wp_x_nmbe_plus_shape,W_P,0.36576459610696455
+M2_wp_x_nmbe_plus_shape,W_P x z(proxy nMBE),-0.028695592127840504
+M2_wp_x_nmbe_plus_shape,W_P x z(shape mismatch: reference_approximation__level__pearson__none__full),0.05463043875824577

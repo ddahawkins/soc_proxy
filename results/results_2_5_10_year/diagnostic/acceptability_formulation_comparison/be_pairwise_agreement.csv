@@ -1,0 +1,7 @@
+model_a,model_b,state_agreement,state_disagreement_count,p_acceptable_pearson,p_acceptable_mean_abs_difference,p_acceptable_max_abs_difference
+two_stage_error_calibration,direct_multinomial,0.765,47,0.80885623644219,0.16895708112789948,0.8617066088958761
+two_stage_error_calibration,gaussian_distributional,0.87,26,0.9730130442247544,0.12775263149764157,0.35485734665558155
+two_stage_error_calibration,direct_hurdle,0.745,51,0.7092026662794045,0.2217897649941177,0.8894209287809254
+direct_multinomial,gaussian_distributional,0.845,31,0.8783409445305737,0.12422282739461842,0.5465245922066077
+direct_multinomial,direct_hurdle,0.91,18,0.926466415961321,0.08885707713513906,0.4659394238171363
+gaussian_distributional,direct_hurdle,0.785,43,0.7676329926590261,0.16605679313458657,0.7277526095382979

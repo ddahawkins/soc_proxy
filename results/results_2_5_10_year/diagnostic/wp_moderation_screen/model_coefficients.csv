@@ -1,0 +1,559 @@
+metric_row,variant,model,term,coefficient
+clustered_approximation__level__nmbe,full,base,intercept,-0.02293055756728182
+clustered_approximation__level__nmbe,full,base,z(clustered_approximation__level__nmbe__reference_proxy_full_range__full),-0.047283087705502984
+clustered_approximation__level__nmbe,full,wp,intercept,-0.05776586720174893
+clustered_approximation__level__nmbe,full,wp,z(clustered_approximation__level__nmbe__reference_proxy_full_range__full),-0.040929850059938794
+clustered_approximation__level__nmbe,full,wp,W_P - 0.5,0.27868247707573696
+clustered_approximation__level__nmbe,full,moderated,intercept,-0.055880622964100526
+clustered_approximation__level__nmbe,full,moderated,z(clustered_approximation__level__nmbe__reference_proxy_full_range__full),-0.04639726756378549
+clustered_approximation__level__nmbe,full,moderated,W_P - 0.5,0.2708554986423905
+clustered_approximation__level__nmbe,full,moderated,z(clustered_approximation__level__nmbe__reference_proxy_full_range__full) x (W_P - 0.5),0.039779610162883
+clustered_approximation__level__nmbe,top_window,base,intercept,-0.02293055756728182
+clustered_approximation__level__nmbe,top_window,base,z(clustered_approximation__level__nmbe__reference_proxy_full_range__15d),-0.07159386813743393
+clustered_approximation__level__nmbe,top_window,wp,intercept,-0.053285790978143406
+clustered_approximation__level__nmbe,top_window,wp,z(clustered_approximation__level__nmbe__reference_proxy_full_range__15d),-0.055158165955006395
+clustered_approximation__level__nmbe,top_window,wp,W_P - 0.5,0.24284186728689264
+clustered_approximation__level__nmbe,top_window,moderated,intercept,-0.05301082229947697
+clustered_approximation__level__nmbe,top_window,moderated,z(clustered_approximation__level__nmbe__reference_proxy_full_range__15d),-0.05548678767030365
+clustered_approximation__level__nmbe,top_window,moderated,W_P - 0.5,0.2424358686835358
+clustered_approximation__level__nmbe,top_window,moderated,z(clustered_approximation__level__nmbe__reference_proxy_full_range__15d) x (W_P - 0.5),0.0033128931395212382
+clustered_approximation__level__nmbe,pair,base,intercept,-0.02293055756728182
+clustered_approximation__level__nmbe,pair,base,z(clustered_approximation__level__nmbe__reference_proxy_full_range__full),0.024566189911634794
+clustered_approximation__level__nmbe,pair,base,z(clustered_approximation__level__nmbe__reference_proxy_full_range__15d),-0.0909918929660334
+clustered_approximation__level__nmbe,pair,wp,intercept,-0.05302699654250869
+clustered_approximation__level__nmbe,pair,wp,z(clustered_approximation__level__nmbe__reference_proxy_full_range__full),0.004968636835058326
+clustered_approximation__level__nmbe,pair,wp,z(clustered_approximation__level__nmbe__reference_proxy_full_range__15d),-0.05922163818313461
+clustered_approximation__level__nmbe,pair,wp,W_P - 0.5,0.2407715118018149
+clustered_approximation__level__nmbe,pair,moderated,intercept,-0.05425419981887339
+clustered_approximation__level__nmbe,pair,moderated,z(clustered_approximation__level__nmbe__reference_proxy_full_range__full),-0.006733866613733911
+clustered_approximation__level__nmbe,pair,moderated,z(clustered_approximation__level__nmbe__reference_proxy_full_range__15d),-0.051384193749484476
+clustered_approximation__level__nmbe,pair,moderated,W_P - 0.5,0.2346543071829012
+clustered_approximation__level__nmbe,pair,moderated,z(clustered_approximation__level__nmbe__reference_proxy_full_range__full) x (W_P - 0.5),0.07323887585651524
+clustered_approximation__level__nmbe,pair,moderated,z(clustered_approximation__level__nmbe__reference_proxy_full_range__15d) x (W_P - 0.5),-0.054099787085382454
+clustered_approximation__level__nrmse,full,base,intercept,-0.02293055756728182
+clustered_approximation__level__nrmse,full,base,z(clustered_approximation__level__nrmse__reference_proxy_full_range__full),0.03754997506325068
+clustered_approximation__level__nrmse,full,wp,intercept,-0.058005214670134767
+clustered_approximation__level__nrmse,full,wp,z(clustered_approximation__level__nrmse__reference_proxy_full_range__full),0.030292434045413374
+clustered_approximation__level__nrmse,full,wp,W_P - 0.5,0.2805972568228237
+clustered_approximation__level__nrmse,full,moderated,intercept,-0.05757460756784693
+clustered_approximation__level__nrmse,full,moderated,z(clustered_approximation__level__nrmse__reference_proxy_full_range__full),0.03519202372162627
+clustered_approximation__level__nrmse,full,moderated,W_P - 0.5,0.2820739174593697
+clustered_approximation__level__nrmse,full,moderated,z(clustered_approximation__level__nrmse__reference_proxy_full_range__full) x (W_P - 0.5),-0.0237849895343708
+clustered_approximation__level__nrmse,top_window,base,intercept,-0.02293055756728182
+clustered_approximation__level__nrmse,top_window,base,z(clustered_approximation__level__nrmse__reference_proxy_full_range__15d),-0.07123528274372909
+clustered_approximation__level__nrmse,top_window,wp,intercept,-0.05203426744964761
+clustered_approximation__level__nrmse,top_window,wp,z(clustered_approximation__level__nrmse__reference_proxy_full_range__15d),-0.050359087057036726
+clustered_approximation__level__nrmse,top_window,wp,W_P - 0.5,0.23282967905892632
+clustered_approximation__level__nrmse,top_window,moderated,intercept,-0.050963992034009115
+clustered_approximation__level__nrmse,top_window,moderated,z(clustered_approximation__level__nrmse__reference_proxy_full_range__15d),-0.05166043373190634
+clustered_approximation__level__nrmse,top_window,moderated,W_P - 0.5,0.23110077045994973
+clustered_approximation__level__nrmse,top_window,moderated,z(clustered_approximation__level__nrmse__reference_proxy_full_range__15d) x (W_P - 0.5),0.00952636343492404
+clustered_approximation__level__nrmse,pair,base,intercept,-0.022930557567281816
+clustered_approximation__level__nrmse,pair,base,z(clustered_approximation__level__nrmse__reference_proxy_full_range__full),0.036946884704949556
+clustered_approximation__level__nrmse,pair,base,z(clustered_approximation__level__nrmse__reference_proxy_full_range__15d),-0.07092109824169443
+clustered_approximation__level__nrmse,pair,wp,intercept,-0.050629182936103155
+clustered_approximation__level__nrmse,pair,wp,z(clustered_approximation__level__nrmse__reference_proxy_full_range__full),0.03138412128259301
+clustered_approximation__level__nrmse,pair,wp,z(clustered_approximation__level__nrmse__reference_proxy_full_range__15d),-0.05110007868862183
+clustered_approximation__level__nrmse,pair,wp,W_P - 0.5,0.22158900295057068
+clustered_approximation__level__nrmse,pair,moderated,intercept,-0.04975826003925331
+clustered_approximation__level__nrmse,pair,moderated,z(clustered_approximation__level__nrmse__reference_proxy_full_range__full),0.03350725784841731
+clustered_approximation__level__nrmse,pair,moderated,z(clustered_approximation__level__nrmse__reference_proxy_full_range__15d),-0.05169985043497317
+clustered_approximation__level__nrmse,pair,moderated,W_P - 0.5,0.22143523987489447
+clustered_approximation__level__nrmse,pair,moderated,z(clustered_approximation__level__nrmse__reference_proxy_full_range__full) x (W_P - 0.5),-0.010713852304373096
+clustered_approximation__level__nrmse,pair,moderated,z(clustered_approximation__level__nrmse__reference_proxy_full_range__15d) x (W_P - 0.5),0.006408363926079758
+clustered_approximation__level__pearson,full,base,intercept,-0.02293055756728182
+clustered_approximation__level__pearson,full,base,z(clustered_approximation__level__pearson__none__full),0.006635894348206423
+clustered_approximation__level__pearson,full,wp,intercept,-0.05957463551982156
+clustered_approximation__level__pearson,full,wp,z(clustered_approximation__level__pearson__none__full),-0.004981024596948257
+clustered_approximation__level__pearson,full,wp,W_P - 0.5,0.293152623620318
+clustered_approximation__level__pearson,full,moderated,intercept,-0.05913059224097503
+clustered_approximation__level__pearson,full,moderated,z(clustered_approximation__level__pearson__none__full),-0.004600860573169297
+clustered_approximation__level__pearson,full,moderated,W_P - 0.5,0.29342614658971516
+clustered_approximation__level__pearson,full,moderated,z(clustered_approximation__level__pearson__none__full) x (W_P - 0.5),-0.012068212739463093
+clustered_approximation__level__pearson,top_window,base,intercept,-0.02293055756728182
+clustered_approximation__level__pearson,top_window,base,z(clustered_approximation__level__pearson__none__90d),0.03357634013429739
+clustered_approximation__level__pearson,top_window,wp,intercept,-0.05771422661452999
+clustered_approximation__level__pearson,top_window,wp,z(clustered_approximation__level__pearson__none__90d),0.013153637243060654
+clustered_approximation__level__pearson,top_window,wp,W_P - 0.5,0.27826935237798534
+clustered_approximation__level__pearson,top_window,moderated,intercept,-0.05524775828769804
+clustered_approximation__level__pearson,top_window,moderated,z(clustered_approximation__level__pearson__none__90d),0.0034603449591175247
+clustered_approximation__level__pearson,top_window,moderated,W_P - 0.5,0.28848908004827656
+clustered_approximation__level__pearson,top_window,moderated,z(clustered_approximation__level__pearson__none__90d) x (W_P - 0.5),-0.05101294253523063
+clustered_approximation__level__pearson,pair,base,intercept,-0.022930557567281816
+clustered_approximation__level__pearson,pair,base,z(clustered_approximation__level__pearson__none__full),-0.0025424251811141042
+clustered_approximation__level__pearson,pair,base,z(clustered_approximation__level__pearson__none__90d),0.03425751020623705
+clustered_approximation__level__pearson,pair,wp,intercept,-0.058008527714866115
+clustered_approximation__level__pearson,pair,wp,z(clustered_approximation__level__pearson__none__full),-0.008578136561899334
+clustered_approximation__level__pearson,pair,wp,z(clustered_approximation__level__pearson__none__90d),0.015279109038067198
+clustered_approximation__level__pearson,pair,wp,W_P - 0.5,0.28062376118067445
+clustered_approximation__level__pearson,pair,moderated,intercept,-0.05582379768068069
+clustered_approximation__level__pearson,pair,moderated,z(clustered_approximation__level__pearson__none__full),-0.007384903343874451
+clustered_approximation__level__pearson,pair,moderated,z(clustered_approximation__level__pearson__none__90d),0.006753045294487105
+clustered_approximation__level__pearson,pair,moderated,W_P - 0.5,0.2890419844685208
+clustered_approximation__level__pearson,pair,moderated,z(clustered_approximation__level__pearson__none__full) x (W_P - 0.5),-0.0019008902215343784
+clustered_approximation__level__pearson,pair,moderated,z(clustered_approximation__level__pearson__none__90d) x (W_P - 0.5),-0.043079446580152884
+clustered_approximation__delta__nmbe,full,base,intercept,-0.02293055756728182
+clustered_approximation__delta__nmbe,full,base,z(clustered_approximation__delta__nmbe__reference_proxy_full_range__full),-0.01059387459919476
+clustered_approximation__delta__nmbe,full,wp,intercept,-0.0591617507277758
+clustered_approximation__delta__nmbe,full,wp,z(clustered_approximation__delta__nmbe__reference_proxy_full_range__full),-0.008533166556526584
+clustered_approximation__delta__nmbe,full,wp,W_P - 0.5,0.2898495452839519
+clustered_approximation__delta__nmbe,full,moderated,intercept,-0.05897500548523485
+clustered_approximation__delta__nmbe,full,moderated,z(clustered_approximation__delta__nmbe__reference_proxy_full_range__full),0.0007985990952070672
+clustered_approximation__delta__nmbe,full,moderated,W_P - 0.5,0.28543573711628845
+clustered_approximation__delta__nmbe,full,moderated,z(clustered_approximation__delta__nmbe__reference_proxy_full_range__full) x (W_P - 0.5),-0.05133648749415643
+clustered_approximation__delta__nmbe,top_window,base,intercept,-0.02293055756728182
+clustered_approximation__delta__nmbe,top_window,base,z(clustered_approximation__delta__nmbe__reference_proxy_full_range__90d),0.04058902468127625
+clustered_approximation__delta__nmbe,top_window,wp,intercept,-0.05885756704961714
+clustered_approximation__delta__nmbe,top_window,wp,z(clustered_approximation__delta__nmbe__reference_proxy_full_range__90d),0.03872786386875297
+clustered_approximation__delta__nmbe,top_window,wp,W_P - 0.5,0.2874160758586827
+clustered_approximation__delta__nmbe,top_window,moderated,intercept,-0.05857084209653235
+clustered_approximation__delta__nmbe,top_window,moderated,z(clustered_approximation__delta__nmbe__reference_proxy_full_range__90d),0.040196968232569
+clustered_approximation__delta__nmbe,top_window,moderated,W_P - 0.5,0.28575781816037943
+clustered_approximation__delta__nmbe,top_window,moderated,z(clustered_approximation__delta__nmbe__reference_proxy_full_range__90d) x (W_P - 0.5),-0.012268214902039333
+clustered_approximation__delta__nmbe,pair,base,intercept,-0.02293055756728182
+clustered_approximation__delta__nmbe,pair,base,z(clustered_approximation__delta__nmbe__reference_proxy_full_range__full),-0.011286461514794165
+clustered_approximation__delta__nmbe,pair,base,z(clustered_approximation__delta__nmbe__reference_proxy_full_range__90d),0.04078070492766797
+clustered_approximation__delta__nmbe,pair,wp,intercept,-0.05875104166522972
+clustered_approximation__delta__nmbe,pair,wp,z(clustered_approximation__delta__nmbe__reference_proxy_full_range__full),-0.009217001577789485
+clustered_approximation__delta__nmbe,pair,wp,z(clustered_approximation__delta__nmbe__reference_proxy_full_range__90d),0.038889916495845514
+clustered_approximation__delta__nmbe,pair,wp,W_P - 0.5,0.2865638727835834
+clustered_approximation__delta__nmbe,pair,moderated,intercept,-0.05818657446195849
+clustered_approximation__delta__nmbe,pair,moderated,z(clustered_approximation__delta__nmbe__reference_proxy_full_range__full),-0.0016438508854893508
+clustered_approximation__delta__nmbe,pair,moderated,z(clustered_approximation__delta__nmbe__reference_proxy_full_range__90d),0.04020386203508832
+clustered_approximation__delta__nmbe,pair,moderated,W_P - 0.5,0.28049046143834716
+clustered_approximation__delta__nmbe,pair,moderated,z(clustered_approximation__delta__nmbe__reference_proxy_full_range__full) x (W_P - 0.5),-0.04341008228269236
+clustered_approximation__delta__nmbe,pair,moderated,z(clustered_approximation__delta__nmbe__reference_proxy_full_range__90d) x (W_P - 0.5),-0.017592199290234364
+clustered_approximation__delta__nrmse,full,base,intercept,-0.02293055756728182
+clustered_approximation__delta__nrmse,full,base,z(clustered_approximation__delta__nrmse__reference_proxy_full_range__full),-0.01511370051948494
+clustered_approximation__delta__nrmse,full,wp,intercept,-0.05913233744669097
+clustered_approximation__delta__nrmse,full,wp,z(clustered_approximation__delta__nrmse__reference_proxy_full_range__full),-0.013405938277022179
+clustered_approximation__delta__nrmse,full,wp,W_P - 0.5,0.28961423903527317
+clustered_approximation__delta__nrmse,full,moderated,intercept,-0.05657283434068984
+clustered_approximation__delta__nrmse,full,moderated,z(clustered_approximation__delta__nrmse__reference_proxy_full_range__full),-0.0260574122838816
+clustered_approximation__delta__nrmse,full,moderated,W_P - 0.5,0.2717880136403068
+clustered_approximation__delta__nrmse,full,moderated,z(clustered_approximation__delta__nrmse__reference_proxy_full_range__full) x (W_P - 0.5),0.056171435424928626
+clustered_approximation__delta__nrmse,top_window,base,intercept,-0.02293055756728182
+clustered_approximation__delta__nrmse,top_window,base,z(clustered_approximation__delta__nrmse__reference_proxy_full_range__180d),-0.0008429394635046973
+clustered_approximation__delta__nrmse,top_window,wp,intercept,-0.05958307745031729
+clustered_approximation__delta__nrmse,top_window,wp,z(clustered_approximation__delta__nrmse__reference_proxy_full_range__180d),-0.00814171690424012
+clustered_approximation__delta__nrmse,top_window,wp,W_P - 0.5,0.2932201590642838
+clustered_approximation__delta__nrmse,top_window,moderated,intercept,-0.05956464891483225
+clustered_approximation__delta__nrmse,top_window,moderated,z(clustered_approximation__delta__nrmse__reference_proxy_full_range__180d),-0.016220695666569633
+clustered_approximation__delta__nrmse,top_window,moderated,W_P - 0.5,0.2862514527775318
+clustered_approximation__delta__nrmse,top_window,moderated,z(clustered_approximation__delta__nrmse__reference_proxy_full_range__180d) x (W_P - 0.5),0.03425464465221121
+clustered_approximation__delta__nrmse,pair,base,intercept,-0.022930557567281816
+clustered_approximation__delta__nrmse,pair,base,z(clustered_approximation__delta__nrmse__reference_proxy_full_range__full),-0.03560246639723489
+clustered_approximation__delta__nrmse,pair,base,z(clustered_approximation__delta__nrmse__reference_proxy_full_range__180d),0.026590161752076777
+clustered_approximation__delta__nrmse,pair,wp,intercept,-0.0588607438520992
+clustered_approximation__delta__nrmse,pair,wp,z(clustered_approximation__delta__nrmse__reference_proxy_full_range__full),-0.017860261343354167
+clustered_approximation__delta__nrmse,pair,wp,z(clustered_approximation__delta__nrmse__reference_proxy_full_range__180d),0.005764158677082394
+clustered_approximation__delta__nrmse,pair,wp,W_P - 0.5,0.287441490278539
+clustered_approximation__delta__nrmse,pair,moderated,intercept,-0.05609124688588858
+clustered_approximation__delta__nrmse,pair,moderated,z(clustered_approximation__delta__nrmse__reference_proxy_full_range__full),-0.03103278712420642
+clustered_approximation__delta__nrmse,pair,moderated,z(clustered_approximation__delta__nrmse__reference_proxy_full_range__180d),0.0068930221253772775
+clustered_approximation__delta__nrmse,pair,moderated,W_P - 0.5,0.26992173924837365
+clustered_approximation__delta__nrmse,pair,moderated,z(clustered_approximation__delta__nrmse__reference_proxy_full_range__full) x (W_P - 0.5),0.06183129750108115
+clustered_approximation__delta__nrmse,pair,moderated,z(clustered_approximation__delta__nrmse__reference_proxy_full_range__180d) x (W_P - 0.5),-0.008634520948127859
+clustered_approximation__delta__pearson,full,base,intercept,-0.02293055756728182
+clustered_approximation__delta__pearson,full,base,z(clustered_approximation__delta__pearson__none__full),0.05420560381397299
+clustered_approximation__delta__pearson,full,wp,intercept,-0.054668968663993636
+clustered_approximation__delta__pearson,full,wp,z(clustered_approximation__delta__pearson__none__full),0.029590612661951336
+clustered_approximation__delta__pearson,full,wp,W_P - 0.5,0.25390728877369356
+clustered_approximation__delta__pearson,full,moderated,intercept,-0.05035898771806274
+clustered_approximation__delta__pearson,full,moderated,z(clustered_approximation__delta__pearson__none__full),0.02912070030562706
+clustered_approximation__delta__pearson,full,moderated,W_P - 0.5,0.25153330815637154
+clustered_approximation__delta__pearson,full,moderated,z(clustered_approximation__delta__pearson__none__full) x (W_P - 0.5),-0.04139709811740902
+clustered_approximation__delta__pearson,top_window,base,intercept,-0.02293055756728182
+clustered_approximation__delta__pearson,top_window,base,z(clustered_approximation__delta__pearson__none__180d),0.059549481091675356
+clustered_approximation__delta__pearson,top_window,wp,intercept,-0.054106393741199556
+clustered_approximation__delta__pearson,top_window,wp,z(clustered_approximation__delta__pearson__none__180d),0.038905975896001706
+clustered_approximation__delta__pearson,top_window,wp,W_P - 0.5,0.24940668939134075
+clustered_approximation__delta__pearson,top_window,moderated,intercept,-0.0551838593166053
+clustered_approximation__delta__pearson,top_window,moderated,z(clustered_approximation__delta__pearson__none__180d),0.03927921989956226
+clustered_approximation__delta__pearson,top_window,moderated,W_P - 0.5,0.24961021993398336
+clustered_approximation__delta__pearson,top_window,moderated,z(clustered_approximation__delta__pearson__none__180d) x (W_P - 0.5),0.012710142233803328
+clustered_approximation__delta__pearson,pair,base,intercept,-0.02293055756728182
+clustered_approximation__delta__pearson,pair,base,z(clustered_approximation__delta__pearson__none__full),0.022060715725770032
+clustered_approximation__delta__pearson,pair,base,z(clustered_approximation__delta__pearson__none__180d),0.04309374713121838
+clustered_approximation__delta__pearson,pair,wp,intercept,-0.05396068935911359
+clustered_approximation__delta__pearson,pair,wp,z(clustered_approximation__delta__pearson__none__full),0.0023599530341797087
+clustered_approximation__delta__pearson,pair,wp,z(clustered_approximation__delta__pearson__none__180d),0.0372420979551297
+clustered_approximation__delta__pearson,pair,wp,W_P - 0.5,0.24824105433465307
+clustered_approximation__delta__pearson,pair,moderated,intercept,-0.051607628036756586
+clustered_approximation__delta__pearson,pair,moderated,z(clustered_approximation__delta__pearson__none__full),0.007643299642605358
+clustered_approximation__delta__pearson,pair,moderated,z(clustered_approximation__delta__pearson__none__180d),0.03261274382458026
+clustered_approximation__delta__pearson,pair,moderated,W_P - 0.5,0.24426867377067374
+clustered_approximation__delta__pearson,pair,moderated,z(clustered_approximation__delta__pearson__none__full) x (W_P - 0.5),-0.07784276337393113
+clustered_approximation__delta__pearson,pair,moderated,z(clustered_approximation__delta__pearson__none__180d) x (W_P - 0.5),0.0687435789876768
+tsa__level__nmbe,full,base,intercept,-0.02293055756728182
+tsa__level__nmbe,full,base,z(tsa__level__nmbe__reference_proxy_full_range__full),0.029562046303152335
+tsa__level__nmbe,full,wp,intercept,-0.05855964995338463
+tsa__level__nmbe,full,wp,z(tsa__level__nmbe__reference_proxy_full_range__full),0.005089532962039269
+tsa__level__nmbe,full,wp,W_P - 0.5,0.2850327390888225
+tsa__level__nmbe,full,moderated,intercept,-0.055932335648197676
+tsa__level__nmbe,full,moderated,z(tsa__level__nmbe__reference_proxy_full_range__full),0.015227133746293524
+tsa__level__nmbe,full,moderated,W_P - 0.5,0.2868398760702459
+tsa__level__nmbe,full,moderated,z(tsa__level__nmbe__reference_proxy_full_range__full) x (W_P - 0.5),-0.033231455714600344
+tsa__level__nmbe,top_window,base,intercept,-0.02293055756728182
+tsa__level__nmbe,top_window,base,z(tsa__level__nmbe__reference_proxy_full_range__273d),0.025868646058257765
+tsa__level__nmbe,top_window,wp,intercept,-0.05934281360604505
+tsa__level__nmbe,top_window,wp,z(tsa__level__nmbe__reference_proxy_full_range__273d),-0.000578227064646636
+tsa__level__nmbe,top_window,wp,W_P - 0.5,0.2912980483101057
+tsa__level__nmbe,top_window,moderated,intercept,-0.056885309637346476
+tsa__level__nmbe,top_window,moderated,z(tsa__level__nmbe__reference_proxy_full_range__273d),0.006060141092525364
+tsa__level__nmbe,top_window,moderated,W_P - 0.5,0.2930603022753431
+tsa__level__nmbe,top_window,moderated,z(tsa__level__nmbe__reference_proxy_full_range__273d) x (W_P - 0.5),-0.0294943658843443
+tsa__level__nmbe,pair,base,intercept,-0.022930557567281816
+tsa__level__nmbe,pair,base,z(tsa__level__nmbe__reference_proxy_full_range__full),0.032406294178947165
+tsa__level__nmbe,pair,base,z(tsa__level__nmbe__reference_proxy_full_range__273d),-0.003173695024086323
+tsa__level__nmbe,pair,wp,intercept,-0.05913549463015563
+tsa__level__nmbe,pair,wp,z(tsa__level__nmbe__reference_proxy_full_range__full),0.025794424897394464
+tsa__level__nmbe,pair,wp,z(tsa__level__nmbe__reference_proxy_full_range__273d),-0.023544468091577453
+tsa__level__nmbe,pair,wp,W_P - 0.5,0.2896394965029907
+tsa__level__nmbe,pair,moderated,intercept,-0.05488236163764148
+tsa__level__nmbe,pair,moderated,z(tsa__level__nmbe__reference_proxy_full_range__full),0.032541506367772415
+tsa__level__nmbe,pair,moderated,z(tsa__level__nmbe__reference_proxy_full_range__273d),-0.019454321472095363
+tsa__level__nmbe,pair,moderated,W_P - 0.5,0.2908314993095549
+tsa__level__nmbe,pair,moderated,z(tsa__level__nmbe__reference_proxy_full_range__full) x (W_P - 0.5),0.025868866061290657
+tsa__level__nmbe,pair,moderated,z(tsa__level__nmbe__reference_proxy_full_range__273d) x (W_P - 0.5),-0.0729509560400988
+tsa__level__nrmse,full,base,intercept,-0.02293055756728182
+tsa__level__nrmse,full,base,z(tsa__level__nrmse__reference_proxy_full_range__full),0.008952520258232333
+tsa__level__nrmse,full,wp,intercept,-0.05927694431096619
+tsa__level__nrmse,full,wp,z(tsa__level__nrmse__reference_proxy_full_range__full),0.009306475923913177
+tsa__level__nrmse,full,wp,W_P - 0.5,0.2907710939494749
+tsa__level__nrmse,full,moderated,intercept,-0.05966528382200551
+tsa__level__nrmse,full,moderated,z(tsa__level__nrmse__reference_proxy_full_range__full),0.0007565452782022326
+tsa__level__nrmse,full,moderated,W_P - 0.5,0.2943055997958494
+tsa__level__nrmse,full,moderated,z(tsa__level__nrmse__reference_proxy_full_range__full) x (W_P - 0.5),0.04392813422416221
+tsa__level__nrmse,top_window,base,intercept,-0.022930557567281816
+tsa__level__nrmse,top_window,base,z(tsa__level__nrmse__reference_proxy_full_range__30d),-0.018729070772051912
+tsa__level__nrmse,top_window,wp,intercept,-0.05964871088438439
+tsa__level__nrmse,top_window,wp,z(tsa__level__nrmse__reference_proxy_full_range__30d),0.003255892750779161
+tsa__level__nrmse,top_window,wp,W_P - 0.5,0.29374522653682056
+tsa__level__nrmse,top_window,moderated,intercept,-0.056456458809968885
+tsa__level__nrmse,top_window,moderated,z(tsa__level__nrmse__reference_proxy_full_range__30d),0.0010127091882698195
+tsa__level__nrmse,top_window,moderated,W_P - 0.5,0.2979560147726129
+tsa__level__nrmse,top_window,moderated,z(tsa__level__nrmse__reference_proxy_full_range__30d) x (W_P - 0.5),0.04968492104410954
+tsa__level__nrmse,pair,base,intercept,-0.022930557567281816
+tsa__level__nrmse,pair,base,z(tsa__level__nrmse__reference_proxy_full_range__full),0.0451955194988202
+tsa__level__nrmse,pair,base,z(tsa__level__nrmse__reference_proxy_full_range__30d),-0.050906269845119596
+tsa__level__nrmse,pair,wp,intercept,-0.058271841569024395
+tsa__level__nrmse,pair,wp,z(tsa__level__nrmse__reference_proxy_full_range__full),0.015342274952391885
+tsa__level__nrmse,pair,wp,z(tsa__level__nrmse__reference_proxy_full_range__30d),-0.008491523765189416
+tsa__level__nrmse,pair,wp,W_P - 0.5,0.28273027201394074
+tsa__level__nrmse,pair,moderated,intercept,-0.05700870599634057
+tsa__level__nrmse,pair,moderated,z(tsa__level__nrmse__reference_proxy_full_range__full),0.006701361526156352
+tsa__level__nrmse,pair,moderated,z(tsa__level__nrmse__reference_proxy_full_range__30d),-0.004422494321793268
+tsa__level__nrmse,pair,moderated,W_P - 0.5,0.2923633805514312
+tsa__level__nrmse,pair,moderated,z(tsa__level__nrmse__reference_proxy_full_range__full) x (W_P - 0.5),0.020266743367984976
+tsa__level__nrmse,pair,moderated,z(tsa__level__nrmse__reference_proxy_full_range__30d) x (W_P - 0.5),0.03263608319404427
+tsa__level__pearson,full,base,intercept,-0.02293055756728182
+tsa__level__pearson,full,base,z(tsa__level__pearson__none__full),-0.026751162961252416
+tsa__level__pearson,full,wp,intercept,-0.05854057857675075
+tsa__level__pearson,full,wp,z(tsa__level__pearson__none__full),-0.02051865690582356
+tsa__level__pearson,full,wp,W_P - 0.5,0.28488016807575134
+tsa__level__pearson,full,moderated,intercept,-0.058990743879901844
+tsa__level__pearson,full,moderated,z(tsa__level__pearson__none__full),-0.01830603440738519
+tsa__level__pearson,full,moderated,W_P - 0.5,0.2859550099670303
+tsa__level__pearson,full,moderated,z(tsa__level__pearson__none__full) x (W_P - 0.5),-0.01443528880567775
+tsa__level__pearson,top_window,base,intercept,-0.02293055756728182
+tsa__level__pearson,top_window,base,z(tsa__level__pearson__none__912d),-0.03733707233589001
+tsa__level__pearson,top_window,wp,intercept,-0.05762684834022337
+tsa__level__pearson,top_window,wp,z(tsa__level__pearson__none__912d),-0.0267554222191441
+tsa__level__pearson,top_window,wp,W_P - 0.5,0.2775703261835323
+tsa__level__pearson,top_window,moderated,intercept,-0.05778784092794284
+tsa__level__pearson,top_window,moderated,z(tsa__level__pearson__none__912d),-0.02601343760794399
+tsa__level__pearson,top_window,moderated,W_P - 0.5,0.27783973871522516
+tsa__level__pearson,top_window,moderated,z(tsa__level__pearson__none__912d) x (W_P - 0.5),-0.0033396633945597773
+tsa__level__pearson,pair,base,intercept,-0.02293055756728182
+tsa__level__pearson,pair,base,z(tsa__level__pearson__none__full),0.033935001204045565
+tsa__level__pearson,pair,base,z(tsa__level__pearson__none__912d),-0.06773888665245006
+tsa__level__pearson,pair,wp,intercept,-0.05728980684485431
+tsa__level__pearson,pair,wp,z(tsa__level__pearson__none__full),0.016840904816532783
+tsa__level__pearson,pair,wp,z(tsa__level__pearson__none__912d),-0.041945704953041126
+tsa__level__pearson,pair,wp,W_P - 0.5,0.2748739942205797
+tsa__level__pearson,pair,moderated,intercept,-0.0571990841609629
+tsa__level__pearson,pair,moderated,z(tsa__level__pearson__none__full),0.01571926651619311
+tsa__level__pearson,pair,moderated,z(tsa__level__pearson__none__912d),-0.0415074693221382
+tsa__level__pearson,pair,moderated,W_P - 0.5,0.2741899872875401
+tsa__level__pearson,pair,moderated,z(tsa__level__pearson__none__full) x (W_P - 0.5),0.01238076549183872
+tsa__level__pearson,pair,moderated,z(tsa__level__pearson__none__912d) x (W_P - 0.5),-0.006968083010251559
+tsa__delta__nmbe,full,base,intercept,-0.02293055756728182
+tsa__delta__nmbe,full,base,z(tsa__delta__nmbe__reference_proxy_full_range__full),-0.020979524353115495
+tsa__delta__nmbe,full,wp,intercept,-0.0587763716273018
+tsa__delta__nmbe,full,wp,z(tsa__delta__nmbe__reference_proxy_full_range__full),-0.015344311248724818
+tsa__delta__nmbe,full,wp,W_P - 0.5,0.2867665124801598
+tsa__delta__nmbe,full,moderated,intercept,-0.059324223749999405
+tsa__delta__nmbe,full,moderated,z(tsa__delta__nmbe__reference_proxy_full_range__full),-0.007805983555632057
+tsa__delta__nmbe,full,moderated,W_P - 0.5,0.2837125082843025
+tsa__delta__nmbe,full,moderated,z(tsa__delta__nmbe__reference_proxy_full_range__full) x (W_P - 0.5),-0.04730591446778882
+tsa__delta__nmbe,top_window,base,intercept,-0.02293055756728182
+tsa__delta__nmbe,top_window,base,z(tsa__delta__nmbe__reference_proxy_full_range__365d),-0.002449632737070957
+tsa__delta__nmbe,top_window,wp,intercept,-0.060608941844840586
+tsa__delta__nmbe,top_window,wp,z(tsa__delta__nmbe__reference_proxy_full_range__365d),0.014770575120745666
+tsa__delta__nmbe,top_window,wp,W_P - 0.5,0.3014270742204702
+tsa__delta__nmbe,top_window,moderated,intercept,-0.06237574139459661
+tsa__delta__nmbe,top_window,moderated,z(tsa__delta__nmbe__reference_proxy_full_range__365d),0.026612461024266558
+tsa__delta__nmbe,top_window,moderated,W_P - 0.5,0.29368039440925364
+tsa__delta__nmbe,top_window,moderated,z(tsa__delta__nmbe__reference_proxy_full_range__365d) x (W_P - 0.5),-0.047876518368795036
+tsa__delta__nmbe,pair,base,intercept,-0.02293055756728182
+tsa__delta__nmbe,pair,base,z(tsa__delta__nmbe__reference_proxy_full_range__full),-0.020920757546792876
+tsa__delta__nmbe,pair,base,z(tsa__delta__nmbe__reference_proxy_full_range__365d),-0.0007045000899533541
+tsa__delta__nmbe,pair,wp,intercept,-0.060200040755048055
+tsa__delta__nmbe,pair,wp,z(tsa__delta__nmbe__reference_proxy_full_range__full),-0.016451492777898202
+tsa__delta__nmbe,pair,wp,z(tsa__delta__nmbe__reference_proxy_full_range__365d),0.01595601746736342
+tsa__delta__nmbe,pair,wp,W_P - 0.5,0.2981558655021298
+tsa__delta__nmbe,pair,moderated,intercept,-0.06230499439444353
+tsa__delta__nmbe,pair,moderated,z(tsa__delta__nmbe__reference_proxy_full_range__full),-0.011374620986559447
+tsa__delta__nmbe,pair,moderated,z(tsa__delta__nmbe__reference_proxy_full_range__365d),0.02715762960165333
+tsa__delta__nmbe,pair,moderated,W_P - 0.5,0.2875269887015533
+tsa__delta__nmbe,pair,moderated,z(tsa__delta__nmbe__reference_proxy_full_range__full) x (W_P - 0.5),-0.037668841191365786
+tsa__delta__nmbe,pair,moderated,z(tsa__delta__nmbe__reference_proxy_full_range__365d) x (W_P - 0.5),-0.047144892546140675
+tsa__delta__nrmse,full,base,intercept,-0.02293055756728182
+tsa__delta__nrmse,full,base,z(tsa__delta__nrmse__reference_proxy_full_range__full),0.01311024521472308
+tsa__delta__nrmse,full,wp,intercept,-0.05940091304015428
+tsa__delta__nrmse,full,wp,z(tsa__delta__nrmse__reference_proxy_full_range__full),0.014854572329643151
+tsa__delta__nrmse,full,wp,W_P - 0.5,0.29176284378297984
+tsa__delta__nrmse,full,moderated,intercept,-0.057195565571019846
+tsa__delta__nrmse,full,moderated,z(tsa__delta__nrmse__reference_proxy_full_range__full),0.0031270232317121512
+tsa__delta__nrmse,full,moderated,W_P - 0.5,0.2767957396703127
+tsa__delta__nrmse,full,moderated,z(tsa__delta__nrmse__reference_proxy_full_range__full) x (W_P - 0.5),0.055942971304596224
+tsa__delta__nrmse,top_window,base,intercept,-0.02293055756728182
+tsa__delta__nrmse,top_window,base,z(tsa__delta__nrmse__reference_proxy_full_range__15d),0.020222257165875952
+tsa__delta__nrmse,top_window,wp,intercept,-0.05917490449607018
+tsa__delta__nrmse,top_window,wp,z(tsa__delta__nrmse__reference_proxy_full_range__15d),0.019440004236286793
+tsa__delta__nrmse,top_window,wp,W_P - 0.5,0.28995477543030695
+tsa__delta__nrmse,top_window,moderated,intercept,-0.05882696855423651
+tsa__delta__nrmse,top_window,moderated,z(tsa__delta__nrmse__reference_proxy_full_range__15d),0.01722804670150054
+tsa__delta__nrmse,top_window,moderated,W_P - 0.5,0.2869363903723965
+tsa__delta__nrmse,top_window,moderated,z(tsa__delta__nrmse__reference_proxy_full_range__15d) x (W_P - 0.5),0.010883573589853958
+tsa__delta__nrmse,pair,base,intercept,-0.02293055756728182
+tsa__delta__nrmse,pair,base,z(tsa__delta__nrmse__reference_proxy_full_range__full),-0.00855684321218685
+tsa__delta__nrmse,pair,base,z(tsa__delta__nrmse__reference_proxy_full_range__15d),0.027070987065671903
+tsa__delta__nrmse,pair,wp,intercept,-0.05914891352741901
+tsa__delta__nrmse,pair,wp,z(tsa__delta__nrmse__reference_proxy_full_range__full),-0.001995954793490027
+tsa__delta__nrmse,pair,wp,z(tsa__delta__nrmse__reference_proxy_full_range__15d),0.02103808836062512
+tsa__delta__nrmse,pair,wp,W_P - 0.5,0.28974684768109776
+tsa__delta__nrmse,pair,moderated,intercept,-0.056881403887797756
+tsa__delta__nrmse,pair,moderated,z(tsa__delta__nrmse__reference_proxy_full_range__full),-0.034364749653025564
+tsa__delta__nrmse,pair,moderated,z(tsa__delta__nrmse__reference_proxy_full_range__15d),0.045476077979112385
+tsa__delta__nrmse,pair,moderated,W_P - 0.5,0.2799466047658464
+tsa__delta__nrmse,pair,moderated,z(tsa__delta__nrmse__reference_proxy_full_range__full) x (W_P - 0.5),0.13197711268843687
+tsa__delta__nrmse,pair,moderated,z(tsa__delta__nrmse__reference_proxy_full_range__15d) x (W_P - 0.5),-0.09394303984505199
+tsa__delta__pearson,full,base,intercept,-0.02293055756728182
+tsa__delta__pearson,full,base,z(tsa__delta__pearson__none__full),-0.014117901395757465
+tsa__delta__pearson,full,wp,intercept,-0.0593883277396083
+tsa__delta__pearson,full,wp,z(tsa__delta__pearson__none__full),-0.01562848491796492
+tsa__delta__pearson,full,wp,W_P - 0.5,0.2916621613786126
+tsa__delta__pearson,full,moderated,intercept,-0.0574032117239248
+tsa__delta__pearson,full,moderated,z(tsa__delta__pearson__none__full),-0.004264532821882573
+tsa__delta__pearson,full,moderated,W_P - 0.5,0.27805433557553494
+tsa__delta__pearson,full,moderated,z(tsa__delta__pearson__none__full) x (W_P - 0.5),-0.054861079066186993
+tsa__delta__pearson,top_window,base,intercept,-0.02293055756728182
+tsa__delta__pearson,top_window,base,z(tsa__delta__pearson__none__30d),0.01186928183383972
+tsa__delta__pearson,top_window,wp,intercept,-0.059168426339768036
+tsa__delta__pearson,top_window,wp,z(tsa__delta__pearson__none__30d),0.0015939142852705577
+tsa__delta__pearson,top_window,wp,W_P - 0.5,0.28990295017988965
+tsa__delta__pearson,top_window,moderated,intercept,-0.054074969711111746
+tsa__delta__pearson,top_window,moderated,z(tsa__delta__pearson__none__30d),0.014994061635195054
+tsa__delta__pearson,top_window,moderated,W_P - 0.5,0.26839117037874366
+tsa__delta__pearson,top_window,moderated,z(tsa__delta__pearson__none__30d) x (W_P - 0.5),-0.06783864873634483
+tsa__delta__pearson,pair,base,intercept,-0.022930557567281816
+tsa__delta__pearson,pair,base,z(tsa__delta__pearson__none__full),-0.0449271657073408
+tsa__delta__pearson,pair,base,z(tsa__delta__pearson__none__30d),0.043609471850323475
+tsa__delta__pearson,pair,wp,intercept,-0.05807748371100866
+tsa__delta__pearson,pair,wp,z(tsa__delta__pearson__none__full),-0.03377781276562208
+tsa__delta__pearson,pair,wp,z(tsa__delta__pearson__none__30d),0.025766638413701484
+tsa__delta__pearson,pair,wp,W_P - 0.5,0.2811754091498167
+tsa__delta__pearson,pair,moderated,intercept,-0.04804081267914257
+tsa__delta__pearson,pair,moderated,z(tsa__delta__pearson__none__full),-0.0750583355272155
+tsa__delta__pearson,pair,moderated,z(tsa__delta__pearson__none__30d),0.0789774652557816
+tsa__delta__pearson,pair,moderated,W_P - 0.5,0.24324101802732825
+tsa__delta__pearson,pair,moderated,z(tsa__delta__pearson__none__full) x (W_P - 0.5),0.08680226651525001
+tsa__delta__pearson,pair,moderated,z(tsa__delta__pearson__none__30d) x (W_P - 0.5),-0.16207013857380434
+rpcc__level__nmbe,full,base,intercept,-0.02293055756728182
+rpcc__level__nmbe,full,base,z(rpcc__level__nmbe__reference_proxy_full_range__full),-0.08235545270812702
+rpcc__level__nmbe,full,wp,intercept,-0.048966857217466866
+rpcc__level__nmbe,full,wp,z(rpcc__level__nmbe__reference_proxy_full_range__full),-0.06003991704086423
+rpcc__level__nmbe,full,wp,W_P - 0.5,0.2082903972014803
+rpcc__level__nmbe,full,moderated,intercept,-0.04839094510960925
+rpcc__level__nmbe,full,moderated,z(rpcc__level__nmbe__reference_proxy_full_range__full),-0.06036677735125681
+rpcc__level__nmbe,full,moderated,W_P - 0.5,0.208997211526911
+rpcc__level__nmbe,full,moderated,z(rpcc__level__nmbe__reference_proxy_full_range__full) x (W_P - 0.5),0.0062001555031336135
+rpcc__level__nmbe,top_window,base,intercept,-0.02293055756728182
+rpcc__level__nmbe,top_window,base,z(rpcc__level__nmbe__reference_proxy_full_range__15d),-0.10376518053949932
+rpcc__level__nmbe,top_window,wp,intercept,-0.035699351167095494
+rpcc__level__nmbe,top_window,wp,z(rpcc__level__nmbe__reference_proxy_full_range__15d),-0.08634522669090691
+rpcc__level__nmbe,top_window,wp,W_P - 0.5,0.10215034879850968
+rpcc__level__nmbe,top_window,moderated,intercept,-0.03420778992171136
+rpcc__level__nmbe,top_window,moderated,z(rpcc__level__nmbe__reference_proxy_full_range__15d),-0.08689853289307879
+rpcc__level__nmbe,top_window,moderated,W_P - 0.5,0.102720209238868
+rpcc__level__nmbe,top_window,moderated,z(rpcc__level__nmbe__reference_proxy_full_range__15d) x (W_P - 0.5),0.00916419946926919
+rpcc__level__nmbe,pair,base,intercept,-0.02293055756728182
+rpcc__level__nmbe,pair,base,z(rpcc__level__nmbe__reference_proxy_full_range__full),0.006138842541876341
+rpcc__level__nmbe,pair,base,z(rpcc__level__nmbe__reference_proxy_full_range__15d),-0.10876014047624853
+rpcc__level__nmbe,pair,wp,intercept,-0.035992549639017206
+rpcc__level__nmbe,pair,wp,z(rpcc__level__nmbe__reference_proxy_full_range__full),-0.0036381266327410178
+rpcc__level__nmbe,pair,wp,z(rpcc__level__nmbe__reference_proxy_full_range__15d),-0.08298501226653121
+rpcc__level__nmbe,pair,wp,W_P - 0.5,0.10449593657388304
+rpcc__level__nmbe,pair,moderated,intercept,-0.03533858249200018
+rpcc__level__nmbe,pair,moderated,z(rpcc__level__nmbe__reference_proxy_full_range__full),-0.0034334732178592786
+rpcc__level__nmbe,pair,moderated,z(rpcc__level__nmbe__reference_proxy_full_range__15d),-0.0843711395397139
+rpcc__level__nmbe,pair,moderated,W_P - 0.5,0.1047489429333097
+rpcc__level__nmbe,pair,moderated,z(rpcc__level__nmbe__reference_proxy_full_range__full) x (W_P - 0.5),0.03442771591805264
+rpcc__level__nmbe,pair,moderated,z(rpcc__level__nmbe__reference_proxy_full_range__15d) x (W_P - 0.5),-0.0176088273094374
+rpcc__level__nrmse,full,base,intercept,-0.02293055756728182
+rpcc__level__nrmse,full,base,z(rpcc__level__nrmse__reference_proxy_full_range__full),-0.08310286440781478
+rpcc__level__nrmse,full,wp,intercept,-0.04435105164476743
+rpcc__level__nrmse,full,wp,z(rpcc__level__nrmse__reference_proxy_full_range__full),-0.052947171948381895
+rpcc__level__nrmse,full,wp,W_P - 0.5,0.17136395261988477
+rpcc__level__nrmse,full,moderated,intercept,-0.04167012139947004
+rpcc__level__nrmse,full,moderated,z(rpcc__level__nrmse__reference_proxy_full_range__full),-0.052644571894761225
+rpcc__level__nrmse,full,moderated,W_P - 0.5,0.1751127198781956
+rpcc__level__nrmse,full,moderated,z(rpcc__level__nrmse__reference_proxy_full_range__full) x (W_P - 0.5),0.01789762417536701
+rpcc__level__nrmse,top_window,base,intercept,-0.02293055756728182
+rpcc__level__nrmse,top_window,base,z(rpcc__level__nrmse__reference_proxy_full_range__15d),-0.10382143966738168
+rpcc__level__nrmse,top_window,wp,intercept,-0.03561721811751125
+rpcc__level__nrmse,top_window,wp,z(rpcc__level__nrmse__reference_proxy_full_range__15d),-0.0864803315389154
+rpcc__level__nrmse,top_window,wp,W_P - 0.5,0.10149328440183551
+rpcc__level__nrmse,top_window,moderated,intercept,-0.03413979446887757
+rpcc__level__nrmse,top_window,moderated,z(rpcc__level__nrmse__reference_proxy_full_range__15d),-0.08702651744516307
+rpcc__level__nrmse,top_window,moderated,W_P - 0.5,0.10206055216513969
+rpcc__level__nrmse,top_window,moderated,z(rpcc__level__nrmse__reference_proxy_full_range__15d) x (W_P - 0.5),0.009062010970852675
+rpcc__level__nrmse,pair,base,intercept,-0.022930557567281816
+rpcc__level__nrmse,pair,base,z(rpcc__level__nrmse__reference_proxy_full_range__full),0.0031702448863027283
+rpcc__level__nrmse,pair,base,z(rpcc__level__nrmse__reference_proxy_full_range__15d),-0.10639218197648814
+rpcc__level__nrmse,pair,wp,intercept,-0.03710511281116917
+rpcc__level__nrmse,pair,wp,z(rpcc__level__nrmse__reference_proxy_full_range__full),0.015563018594235638
+rpcc__level__nrmse,pair,wp,z(rpcc__level__nrmse__reference_proxy_full_range__15d),-0.09706656835444268
+rpcc__level__nrmse,pair,wp,W_P - 0.5,0.11339644195109883
+rpcc__level__nrmse,pair,moderated,intercept,-0.03424006101276398
+rpcc__level__nrmse,pair,moderated,z(rpcc__level__nrmse__reference_proxy_full_range__full),0.01753073643592618
+rpcc__level__nrmse,pair,moderated,z(rpcc__level__nrmse__reference_proxy_full_range__15d),-0.09929092571726378
+rpcc__level__nrmse,pair,moderated,W_P - 0.5,0.11657445986263659
+rpcc__level__nrmse,pair,moderated,z(rpcc__level__nrmse__reference_proxy_full_range__full) x (W_P - 0.5),0.0035192774749628975
+rpcc__level__nrmse,pair,moderated,z(rpcc__level__nrmse__reference_proxy_full_range__15d) x (W_P - 0.5),0.015468840325267335
+rpcc__level__pearson,full,base,intercept,-0.02293055756728182
+rpcc__level__pearson,full,base,z(rpcc__level__pearson__none__full),0.036333131611128874
+rpcc__level__pearson,full,wp,intercept,-0.0575029172244847
+rpcc__level__pearson,full,wp,z(rpcc__level__pearson__none__full),0.013019148952208926
+rpcc__level__pearson,full,wp,W_P - 0.5,0.2765788772576231
+rpcc__level__pearson,full,moderated,intercept,-0.05860793833307161
+rpcc__level__pearson,full,moderated,z(rpcc__level__pearson__none__full),0.013822932269873798
+rpcc__level__pearson,full,moderated,W_P - 0.5,0.27641231200985733
+rpcc__level__pearson,full,moderated,z(rpcc__level__pearson__none__full) x (W_P - 0.5),0.013356107181110704
+rpcc__level__pearson,top_window,base,intercept,-0.02293055756728182
+rpcc__level__pearson,top_window,base,z(rpcc__level__pearson__none__30d),0.05066267270602726
+rpcc__level__pearson,top_window,wp,intercept,-0.05540385183832421
+rpcc__level__pearson,top_window,wp,z(rpcc__level__pearson__none__30d),0.029301135364833152
+rpcc__level__pearson,top_window,wp,W_P - 0.5,0.25978635416833956
+rpcc__level__pearson,top_window,moderated,intercept,-0.05977904540940684
+rpcc__level__pearson,top_window,moderated,z(rpcc__level__pearson__none__30d),0.03703600241512553
+rpcc__level__pearson,top_window,moderated,W_P - 0.5,0.25524376700773943
+rpcc__level__pearson,top_window,moderated,z(rpcc__level__pearson__none__30d) x (W_P - 0.5),0.060114042155289864
+rpcc__level__pearson,pair,base,intercept,-0.02293055756728182
+rpcc__level__pearson,pair,base,z(rpcc__level__pearson__none__full),0.03097242465298851
+rpcc__level__pearson,pair,base,z(rpcc__level__pearson__none__30d),0.04714056625876128
+rpcc__level__pearson,pair,wp,intercept,-0.05379938381688766
+rpcc__level__pearson,pair,wp,z(rpcc__level__pearson__none__full),0.012222622971209667
+rpcc__level__pearson,pair,wp,z(rpcc__level__pearson__none__30d),0.02896665826273972
+rpcc__level__pearson,pair,wp,W_P - 0.5,0.24695060999684734
+rpcc__level__pearson,pair,moderated,intercept,-0.0593214969862629
+rpcc__level__pearson,pair,moderated,z(rpcc__level__pearson__none__full),0.013376667741286466
+rpcc__level__pearson,pair,moderated,z(rpcc__level__pearson__none__30d),0.03685560636512634
+rpcc__level__pearson,pair,moderated,W_P - 0.5,0.24176789347632913
+rpcc__level__pearson,pair,moderated,z(rpcc__level__pearson__none__full) x (W_P - 0.5),0.014149930574385003
+rpcc__level__pearson,pair,moderated,z(rpcc__level__pearson__none__30d) x (W_P - 0.5),0.060529710927714385
+rpcc__delta__nmbe,full,base,intercept,-0.02293055756728182
+rpcc__delta__nmbe,full,base,z(rpcc__delta__nmbe__reference_proxy_full_range__full),0.005079024944063007
+rpcc__delta__nmbe,full,wp,intercept,-0.05928240208323548
+rpcc__delta__nmbe,full,wp,z(rpcc__delta__nmbe__reference_proxy_full_range__full),0.005816050059182731
+rpcc__delta__nmbe,full,wp,W_P - 0.5,0.2908147561276293
+rpcc__delta__nmbe,full,moderated,intercept,-0.05920173491442677
+rpcc__delta__nmbe,full,moderated,z(rpcc__delta__nmbe__reference_proxy_full_range__full),0.0067770704531588954
+rpcc__delta__nmbe,full,moderated,W_P - 0.5,0.2896352220894255
+rpcc__delta__nmbe,full,moderated,z(rpcc__delta__nmbe__reference_proxy_full_range__full) x (W_P - 0.5),-0.026347860520728135
+rpcc__delta__nmbe,top_window,base,intercept,-0.02293055756728182
+rpcc__delta__nmbe,top_window,base,z(rpcc__delta__nmbe__reference_proxy_full_range__90d),0.05802681288462107
+rpcc__delta__nmbe,top_window,wp,intercept,-0.05398037058550958
+rpcc__delta__nmbe,top_window,wp,z(rpcc__delta__nmbe__reference_proxy_full_range__90d),0.033736084149828316
+rpcc__delta__nmbe,top_window,wp,W_P - 0.5,0.248398504145822
+rpcc__delta__nmbe,top_window,moderated,intercept,-0.05469838909729959
+rpcc__delta__nmbe,top_window,moderated,z(rpcc__delta__nmbe__reference_proxy_full_range__90d),0.033048951488803255
+rpcc__delta__nmbe,top_window,moderated,W_P - 0.5,0.24825017224609652
+rpcc__delta__nmbe,top_window,moderated,z(rpcc__delta__nmbe__reference_proxy_full_range__90d) x (W_P - 0.5),0.00753210840342999
+rpcc__delta__nmbe,pair,base,intercept,-0.022930557567281813
+rpcc__delta__nmbe,pair,base,z(rpcc__delta__nmbe__reference_proxy_full_range__full),-0.002464037618485077
+rpcc__delta__nmbe,pair,base,z(rpcc__delta__nmbe__reference_proxy_full_range__90d),0.05834537097418961
+rpcc__delta__nmbe,pair,wp,intercept,-0.05401840679465369
+rpcc__delta__nmbe,pair,wp,z(rpcc__delta__nmbe__reference_proxy_full_range__full),0.0013746457256977318
+rpcc__delta__nmbe,pair,wp,z(rpcc__delta__nmbe__reference_proxy_full_range__90d),0.03352860958444482
+rpcc__delta__nmbe,pair,wp,W_P - 0.5,0.24870279381897503
+rpcc__delta__nmbe,pair,moderated,intercept,-0.05535114707930602
+rpcc__delta__nmbe,pair,moderated,z(rpcc__delta__nmbe__reference_proxy_full_range__full),0.0026392064157409745
+rpcc__delta__nmbe,pair,moderated,z(rpcc__delta__nmbe__reference_proxy_full_range__90d),0.03217654427929739
+rpcc__delta__nmbe,pair,moderated,W_P - 0.5,0.2470306525921859
+rpcc__delta__nmbe,pair,moderated,z(rpcc__delta__nmbe__reference_proxy_full_range__full) x (W_P - 0.5),-0.030477950841454826
+rpcc__delta__nmbe,pair,moderated,z(rpcc__delta__nmbe__reference_proxy_full_range__90d) x (W_P - 0.5),0.014976234600308778
+rpcc__delta__nrmse,full,base,intercept,-0.02293055756728182
+rpcc__delta__nrmse,full,base,z(rpcc__delta__nrmse__reference_proxy_full_range__full),-0.06516172899265099
+rpcc__delta__nrmse,full,wp,intercept,-0.052019718195245424
+rpcc__delta__nrmse,full,wp,z(rpcc__delta__nrmse__reference_proxy_full_range__full),-0.02964556102482385
+rpcc__delta__nrmse,full,wp,W_P - 0.5,0.2327132850237088
+rpcc__delta__nrmse,full,moderated,intercept,-0.05037868170976065
+rpcc__delta__nrmse,full,moderated,z(rpcc__delta__nrmse__reference_proxy_full_range__full),-0.029419144795935007
+rpcc__delta__nrmse,full,moderated,W_P - 0.5,0.23319380233978904
+rpcc__delta__nrmse,full,moderated,z(rpcc__delta__nrmse__reference_proxy_full_range__full) x (W_P - 0.5),0.011146158480033698
+rpcc__delta__nrmse,top_window,base,intercept,-0.02293055756728182
+rpcc__delta__nrmse,top_window,base,z(rpcc__delta__nrmse__reference_proxy_full_range__730d),-0.06382560887244189
+rpcc__delta__nrmse,top_window,wp,intercept,-0.052353191534535715
+rpcc__delta__nrmse,top_window,wp,z(rpcc__delta__nrmse__reference_proxy_full_range__730d),-0.030325842639934004
+rpcc__delta__nrmse,top_window,wp,W_P - 0.5,0.23538107173803155
+rpcc__delta__nrmse,top_window,moderated,intercept,-0.049047744970328024
+rpcc__delta__nrmse,top_window,moderated,z(rpcc__delta__nrmse__reference_proxy_full_range__730d),-0.02974764381816282
+rpcc__delta__nrmse,top_window,moderated,W_P - 0.5,0.2361920777687786
+rpcc__delta__nrmse,top_window,moderated,z(rpcc__delta__nrmse__reference_proxy_full_range__730d) x (W_P - 0.5),0.023937524903255927
+rpcc__delta__nrmse,pair,base,intercept,-0.02293055756728182
+rpcc__delta__nrmse,pair,base,z(rpcc__delta__nrmse__reference_proxy_full_range__full),-0.053863673391533445
+rpcc__delta__nrmse,pair,base,z(rpcc__delta__nrmse__reference_proxy_full_range__730d),-0.0116675010271213
+rpcc__delta__nrmse,pair,wp,intercept,-0.05242265790144001
+rpcc__delta__nrmse,pair,wp,z(rpcc__delta__nrmse__reference_proxy_full_range__full),0.0021725531315527004
+rpcc__delta__nrmse,pair,wp,z(rpcc__delta__nrmse__reference_proxy_full_range__730d),-0.03235051058190381
+rpcc__delta__nrmse,pair,wp,W_P - 0.5,0.2359368026732661
+rpcc__delta__nrmse,pair,moderated,intercept,-0.05231528976872502
+rpcc__delta__nrmse,pair,moderated,z(rpcc__delta__nrmse__reference_proxy_full_range__full),0.004105560245930742
+rpcc__delta__nrmse,pair,moderated,z(rpcc__delta__nrmse__reference_proxy_full_range__730d),-0.03372867300217566
+rpcc__delta__nrmse,pair,moderated,W_P - 0.5,0.23459616088683266
+rpcc__delta__nrmse,pair,moderated,z(rpcc__delta__nrmse__reference_proxy_full_range__full) x (W_P - 0.5),-0.18276581998575425
+rpcc__delta__nrmse,pair,moderated,z(rpcc__delta__nrmse__reference_proxy_full_range__730d) x (W_P - 0.5),0.19556501098177884
+rpcc__delta__pearson,full,base,intercept,-0.02293055756728182
+rpcc__delta__pearson,full,base,z(rpcc__delta__pearson__none__full),0.06996766924586834
+rpcc__delta__pearson,full,wp,intercept,-0.050329697018113566
+rpcc__delta__pearson,full,wp,z(rpcc__delta__pearson__none__full),0.03576964166504507
+rpcc__delta__pearson,full,wp,W_P - 0.5,0.21919311560665394
+rpcc__delta__pearson,full,moderated,intercept,-0.04928452961185112
+rpcc__delta__pearson,full,moderated,z(rpcc__delta__pearson__none__full),0.034983618943010476
+rpcc__delta__pearson,full,moderated,W_P - 0.5,0.22107477770874623
+rpcc__delta__pearson,full,moderated,z(rpcc__delta__pearson__none__full) x (W_P - 0.5),-0.00820659676294141
+rpcc__delta__pearson,top_window,base,intercept,-0.02293055756728182
+rpcc__delta__pearson,top_window,base,z(rpcc__delta__pearson__none__912d),0.07072144333369289
+rpcc__delta__pearson,top_window,wp,intercept,-0.050104183687279286
+rpcc__delta__pearson,top_window,wp,z(rpcc__delta__pearson__none__912d),0.03792149289351811
+rpcc__delta__pearson,top_window,wp,W_P - 0.5,0.21738900895998003
+rpcc__delta__pearson,top_window,moderated,intercept,-0.04946092993638295
+rpcc__delta__pearson,top_window,moderated,z(rpcc__delta__pearson__none__912d),0.03743824765602066
+rpcc__delta__pearson,top_window,moderated,W_P - 0.5,0.21849416589953716
+rpcc__delta__pearson,top_window,moderated,z(rpcc__delta__pearson__none__912d) x (W_P - 0.5),-0.005178892486634147
+rpcc__delta__pearson,pair,base,intercept,-0.022930557567281813
+rpcc__delta__pearson,pair,base,z(rpcc__delta__pearson__none__full),0.011053552083446884
+rpcc__delta__pearson,pair,base,z(rpcc__delta__pearson__none__912d),0.0598386785729092
+rpcc__delta__pearson,pair,wp,intercept,-0.0508345027528115
+rpcc__delta__pearson,pair,wp,z(rpcc__delta__pearson__none__full),-0.04331228775720519
+rpcc__delta__pearson,pair,wp,z(rpcc__delta__pearson__none__912d),0.07968303454346884
+rpcc__delta__pearson,pair,wp,W_P - 0.5,0.2232315614842379
+rpcc__delta__pearson,pair,moderated,intercept,-0.0499059285743662
+rpcc__delta__pearson,pair,moderated,z(rpcc__delta__pearson__none__full),-0.04388660278786186
+rpcc__delta__pearson,pair,moderated,z(rpcc__delta__pearson__none__912d),0.07957748925790704
+rpcc__delta__pearson,pair,moderated,W_P - 0.5,0.22488247575860826
+rpcc__delta__pearson,pair,moderated,z(rpcc__delta__pearson__none__full) x (W_P - 0.5),-0.013670623758497607
+rpcc__delta__pearson,pair,moderated,z(rpcc__delta__pearson__none__912d) x (W_P - 0.5),0.006613952452059584

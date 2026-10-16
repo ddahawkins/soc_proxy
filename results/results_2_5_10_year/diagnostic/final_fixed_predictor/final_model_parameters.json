@@ -1,0 +1,61 @@
+{
+  "signal_predictors": [
+    "clustered_approximation__level__nrmse__reference_proxy_full_range__full",
+    "rpcc__delta__pearson__none__548d",
+    "clustered_approximation__level__nmbe__reference_proxy_full_range__180d"
+  ],
+  "continuous_standardised_form": {
+    "intercept": -0.018725779642474672,
+    "signal_coefficients": {
+      "clustered_approximation__level__nrmse__reference_proxy_full_range__full": 0.04923649488597835,
+      "rpcc__delta__pearson__none__548d": 0.07408791164947838,
+      "clustered_approximation__level__nmbe__reference_proxy_full_range__180d": -0.07222434141657831
+    },
+    "proxy_weight_center": 0.5,
+    "proxy_weight_centered_coefficient": 0.19199451491600847,
+    "signal_means": {
+      "clustered_approximation__level__nrmse__reference_proxy_full_range__full": 0.14848637900829856,
+      "rpcc__delta__pearson__none__548d": 0.7644464744109647,
+      "clustered_approximation__level__nmbe__reference_proxy_full_range__180d": 0.018690924719892484
+    },
+    "signal_scales": {
+      "clustered_approximation__level__nrmse__reference_proxy_full_range__full": 0.0539318140449855,
+      "rpcc__delta__pearson__none__548d": 0.06539967549590502,
+      "clustered_approximation__level__nmbe__reference_proxy_full_range__180d": 0.1395781196581089
+    }
+  },
+  "continuous_raw_form": {
+    "intercept": -1.010615214933169,
+    "signal_coefficients": {
+      "clustered_approximation__level__nrmse__reference_proxy_full_range__full": 0.9129397139304326,
+      "rpcc__delta__pearson__none__548d": 1.1328483067797084,
+      "clustered_approximation__level__nmbe__reference_proxy_full_range__180d": -0.5174474451546488
+    },
+    "proxy_weight_centered_coefficient": 0.19199451491600847
+  },
+  "two_stage_main_tolerance_pp": 10.0,
+  "two_stage_raw_logits": {
+    "acceptable": {
+      "intercept": 2.0338626532232187,
+      "predicted_error_pp": -0.007797967585506394,
+      "predicted_error_pp_squared": -0.0008318323408373362
+    },
+    "over": {
+      "intercept": -1.1103992206371713,
+      "predicted_error_pp": 0.2439823925028993,
+      "predicted_error_pp_squared": 0.0006985858230556429
+    },
+    "under": {
+      "intercept": -0.9234634325860542,
+      "predicted_error_pp": -0.23618442491739386,
+      "predicted_error_pp_squared": 0.000133246517781704
+    }
+  },
+  "gaussian_scale_model": {
+    "ridge_alpha": 1.0,
+    "variance_scale": 3.665154903670499,
+    "note": "Scale model uses three raw signal predictors + (W_P-0.5); sklearn pipeline retained in script, not serialised fully here."
+  },
+  "main_confidence_threshold": 0.75,
+  "n_combined": 400
+}

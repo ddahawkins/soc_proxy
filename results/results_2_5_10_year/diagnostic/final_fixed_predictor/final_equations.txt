@@ -1,0 +1,15 @@
+FINAL COMBINED CONTINUOUS DIAGNOSTIC
+====================================
+
+Signed error is a fraction (0.10 = 10%).
+
+intercept = -1.010615215
+clustered_approximation__level__nrmse__reference_proxy_full_range__full: +0.9129397139
+rpcc__delta__pearson__none__548d: +1.132848307
+clustered_approximation__level__nmbe__reference_proxy_full_range__180d: -0.5174474452
+(W_P - 0.5): +0.1919945149
+
+TWO-STAGE PROBABILITY LOGITS AT MAIN TOLERANCE
+acceptable: z = +2.033862653 -0.007797967586*e_pp -0.0008318323408*e_pp^2
+over: z = -1.110399221 +0.2439823925*e_pp +0.0006985858231*e_pp^2
+under: z = -0.9234634326 -0.2361844249*e_pp +0.0001332465178*e_pp^2

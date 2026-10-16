@@ -6,9 +6,13 @@ __pycache__/
 
 # Other generated outputs
 cache/
-results/
+results/dev_pgcm
+results/diagnostic
+results/proxy_development
 data/signal_cache/
 data/cluster_maps/
+
+experiments/dev*
 
 *.egg-info/
 # pixi environments
@@ -22,3 +26,5 @@ config/dev*
 old/
 
 logs/
+
+delftblue

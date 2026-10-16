@@ -2,7 +2,7 @@
 #
 # Design per country:
 #   5 x 10-year weather horizons
-#   4 representative-period counts: k = 20, 40, 60, 90
+#   4 representative-period counts: k = 20, 40, 60
 #   3 proxy weights: WP = 0, 0.5, 1
 #   6 TSA method combinations:
 #     - hierarchical + medoid

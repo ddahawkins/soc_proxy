@@ -1,0 +1,323 @@
+{
+  "metadata": {
+    "train_country": "NL",
+    "transfer_country": "BE",
+    "horizon_years": 10,
+    "cluster_method": "kmeans",
+    "representation_method": "medoid",
+    "acceptable_limit_fraction": 0.1,
+    "features": [
+      {
+        "name": "ca_level_nmbe_180d",
+        "error_family": "clustered_approximation",
+        "signal_type": "level",
+        "metric": "nmbe",
+        "window_half_width_days": 180.0,
+        "normalisation_basis": "reference_proxy_full_range"
+      },
+      {
+        "name": "rpcc_delta_pearson_548d",
+        "error_family": "rpcc",
+        "signal_type": "delta",
+        "metric": "pearson",
+        "window_half_width_days": 548.0,
+        "normalisation_basis": null
+      },
+      {
+        "name": "ca_level_nrmse_full",
+        "error_family": "clustered_approximation",
+        "signal_type": "level",
+        "metric": "nrmse",
+        "window_half_width_days": null,
+        "normalisation_basis": "reference_proxy_full_range"
+      }
+    ],
+    "wp_centre": 0.5,
+    "logistic_C": 1.0,
+    "variance_ridge_alpha": 1.0
+  },
+  "models": {
+    "two_stage_error_calibration": {
+      "continuous": {
+        "metric_features": [
+          "ca_level_nmbe_180d",
+          "rpcc_delta_pearson_548d",
+          "ca_level_nrmse_full"
+        ],
+        "metric_mean": [
+          0.12175274456439947,
+          0.7758054352688319,
+          0.13668959372999157
+        ],
+        "metric_std": [
+          0.10450080608356022,
+          0.06198676631879377,
+          0.04531467009209636
+        ],
+        "beta": [
+          -0.07050891866200239,
+          -0.05115769470774392,
+          0.07343513364937013,
+          0.029998701312057213,
+          0.16067988626788224
+        ],
+        "wp_centre": 0.5
+      },
+      "calibration_features": [
+        "e_hat",
+        "e_hat_squared"
+      ],
+      "calibrator_scaler_mean": [
+        -0.06839129151079147,
+        0.02462763002771847
+      ],
+      "calibrator_scaler_scale": [
+        0.14124539381234505,
+        0.0382707043796801
+      ],
+      "calibrator_classes": [
+        "acceptable",
+        "over",
+        "under"
+      ],
+      "calibrator_coef": [
+        [
+          -0.015422671536828556,
+          -1.428050850711139
+        ],
+        [
+          2.032965275788849,
+          0.5087929128926514
+        ],
+        [
+          -2.017542604252022,
+          0.9192579378184872
+        ]
+      ],
+      "calibrator_intercept": [
+        1.0069930118855326,
+        -1.5281079617904676,
+        0.5211149499049345
+      ]
+    },
+    "direct_multinomial": {
+      "predictors": [
+        "ca_level_nmbe_180d",
+        "rpcc_delta_pearson_548d",
+        "ca_level_nrmse_full",
+        "wp_centered"
+      ],
+      "scaler_mean": [
+        0.12175274456439947,
+        0.7758054352688319,
+        0.13668959372999157,
+        0.0
+      ],
+      "scaler_scale": [
+        0.10450080608356022,
+        0.06198676631879377,
+        0.04531467009209636,
+        0.3535533905932738
+      ],
+      "classes": [
+        "acceptable",
+        "over",
+        "under"
+      ],
+      "coef": [
+        [
+          0.08875387764130598,
+          1.028655320063068,
+          -0.16731106315087726,
+          -0.29690709611120913
+        ],
+        [
+          -1.242857960865901,
+          0.9940478922833071,
+          0.6512465353183794,
+          1.7068143534052056
+        ],
+        [
+          1.1541040832245948,
+          -2.022703212346376,
+          -0.48393547216750227,
+          -1.4099072572939957
+        ]
+      ],
+      "intercept": [
+        1.7872235485965902,
+        -2.4574511411736846,
+        0.6702275925770903
+      ]
+    },
+    "gaussian_distributional": {
+      "mean_model": {
+        "metric_features": [
+          "ca_level_nmbe_180d",
+          "rpcc_delta_pearson_548d",
+          "ca_level_nrmse_full"
+        ],
+        "metric_mean": [
+          0.12175274456439947,
+          0.7758054352688319,
+          0.13668959372999157
+        ],
+        "metric_std": [
+          0.10450080608356022,
+          0.06198676631879377,
+          0.04531467009209636
+        ],
+        "beta": [
+          -0.07050891866200239,
+          -0.05115769470774392,
+          0.07343513364937013,
+          0.029998701312057213,
+          0.16067988626788224
+        ],
+        "wp_centre": 0.5
+      },
+      "scale_model": {
+        "predictors": [
+          "ca_level_nmbe_180d",
+          "rpcc_delta_pearson_548d",
+          "ca_level_nrmse_full",
+          "wp_centered"
+        ],
+        "scaler_mean": [
+          0.12175274456439947,
+          0.7758054352688319,
+          0.13668959372999157,
+          0.0
+        ],
+        "scaler_scale": [
+          0.10450080608356022,
+          0.06198676631879377,
+          0.04531467009209636,
+          0.3535533905932738
+        ],
+        "ridge_alpha": 1.0,
+        "coef": [
+          -0.31065247265968987,
+          -0.1706013762049635,
+          -0.032046887540148665,
+          0.0027949038529171406
+        ],
+        "intercept": -6.833627444872475,
+        "variance_scale": 3.562705058793149
+      },
+      "distribution": "Gaussian conditional error approximation"
+    },
+    "direct_hurdle": {
+      "acceptable_vs_unacceptable": {
+        "predictors": [
+          "ca_level_nmbe_180d",
+          "rpcc_delta_pearson_548d",
+          "ca_level_nrmse_full",
+          "wp_centered",
+          "ca_level_nmbe_180d*ca_level_nmbe_180d",
+          "ca_level_nmbe_180d*rpcc_delta_pearson_548d",
+          "ca_level_nmbe_180d*ca_level_nrmse_full",
+          "ca_level_nmbe_180d*wp_centered",
+          "rpcc_delta_pearson_548d*rpcc_delta_pearson_548d",
+          "rpcc_delta_pearson_548d*ca_level_nrmse_full",
+          "rpcc_delta_pearson_548d*wp_centered",
+          "ca_level_nrmse_full*ca_level_nrmse_full",
+          "ca_level_nrmse_full*wp_centered",
+          "wp_centered*wp_centered"
+        ],
+        "scaler_mean": [
+          0.12175274456439947,
+          0.7758054352688319,
+          0.13668959372999157,
+          0.0,
+          0.025744149281077763,
+          0.09361044702439872,
+          0.01630114922253172,
+          -0.010272776838233431,
+          0.6057164325913226,
+          0.10541127543131135,
+          0.0152689339785386,
+          0.02073746435962569,
+          -0.001887600225091664,
+          0.125
+        ],
+        "scaler_scale": [
+          0.10450080608356022,
+          0.06198676631879377,
+          0.04531467009209636,
+          0.3535533905932738,
+          0.02259205972536081,
+          0.078793460505303,
+          0.019585352423911104,
+          0.0599878118308856,
+          0.09036447703745572,
+          0.03429356132523025,
+          0.2696587649969607,
+          0.015810673408277687,
+          0.054468311788785265,
+          0.10458250331675945
+        ],
+        "classes": [
+          0,
+          1
+        ],
+        "coef": [
+          [
+            0.014385134597023147,
+            0.9014622187788531,
+            0.15395629038103822,
+            0.44375083981203445,
+            -0.4102925704113273,
+            0.2652804582994644,
+            0.07719509095175899,
+            1.7429219237292628,
+            0.8472978139060375,
+            0.06703639987217083,
+            0.3117057741063226,
+            -0.4504122366585677,
+            -1.4478856782748821,
+            -1.0932386554738374
+          ]
+        ],
+        "intercept": [
+          -0.19794748373789325
+        ]
+      },
+      "over_vs_under_conditional_on_unacceptable": {
+        "predictors": [
+          "ca_level_nmbe_180d",
+          "rpcc_delta_pearson_548d",
+          "ca_level_nrmse_full",
+          "wp_centered"
+        ],
+        "scaler_mean": [
+          0.13151127406079136,
+          0.734918611350984,
+          0.15299935604977394,
+          -0.19662921348314608
+        ],
+        "scaler_scale": [
+          0.12753739985834145,
+          0.06965047106171912,
+          0.05042459880592629,
+          0.3642598893808388
+        ],
+        "classes": [
+          0,
+          1
+        ],
+        "coef": [
+          [
+            -1.4180943378249444,
+            1.4112152328908651,
+            0.6544535238466904,
+            1.5943568507242474
+          ]
+        ],
+        "intercept": [
+          -3.23166699418136
+        ]
+      }
+    }
+  }
+}
