@@ -691,20 +691,20 @@ def make_figure(
             handletextpad=0.55,
         )
 
-        fig.text(
-            AXES_CENTER,
-            0.95,
-            (r"Dots show individual cases; black bars show medians."),
-            ha="center",
-            va="top",
-            fontsize=10,
-            color="0.38",
-        )
+        # fig.text(
+        #     AXES_CENTER,
+        #     0.95,
+        #     (r"Markers show individual cases; black bars show medians."),
+        #     ha="center",
+        #     va="top",
+        #     fontsize=10,
+        #     color="0.38",
+        # )
 
         fig.subplots_adjust(
             left=AXES_LEFT,
             right=AXES_RIGHT,
-            top=0.885,
+            top=0.92,
             bottom=0.05,
             hspace=0.22,
         )
