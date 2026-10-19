@@ -1,11 +1,8 @@
-"""Create Figure 6 (median + IQR version): horizon sensitivity results.
+"""Create Figure 6 (individual points + median version): horizon sensitivity.
 
-This variant of Figure 6 keeps the same overall layout and dimensions as the
-main horizon-sensitivity plot, but replaces raw point clouds with summary
-markers:
-
-    - coloured marker = median
-    - vertical whisker = interquartile range (Q25-Q75)
+This variant of Figure 6 retains the horizon-sensitivity layout but displays
+all individual case results, together with a short black median bar per channel.
+There is deliberately no horizontal jitter within a channel.
 
 The figure compares 2-, 5-, and 10-year modelling horizons for the selected
 paper method (k-means clustering + medoid representation).
@@ -19,8 +16,9 @@ Visual encoding
 - Main x grouping: horizon duration (2, 5, 10 years)
 - Within-horizon channels: SoC proxy weight W_P = 0 and 0.5
 - Marker colour: SoC proxy weight
-- Marker: median across all selected country / weather-horizon / k cases
-- Vertical whisker: interquartile range (Q25-Q75)
+- Coloured circles: individual country / weather-horizon / k results
+- Black horizontal bar: median of the results in each channel
+- All circles within a channel share the same x coordinate (no jitter)
 
 The k values are deliberately pooled within each horizon / W_P channel, but
 the subset is configurable from the command line.
@@ -29,10 +27,9 @@ Source:
     results/results_2_5_10_year/*.parquet
 
 Outputs:
-    results/figures/fig_horizon_results_iqr/
-        fig_horizon_results_iqr.png
-        fig_horizon_results_iqr.pdf
-        fig_horizon_results_iqr_summary.csv
+    results/figures/fig_horizon_results_points/
+        fig_horizon_results_points.pdf
+        fig_horizon_results_points_summary.csv
 """
 
 from __future__ import annotations
@@ -44,7 +41,6 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 from matplotlib.lines import Line2D
-from matplotlib.ticker import MultipleLocator
 
 
 # ---------------------------------------------------------------------------
@@ -52,8 +48,8 @@ from matplotlib.ticker import MultipleLocator
 # ---------------------------------------------------------------------------
 
 DEFAULT_SOURCE_DIR = Path("results/results_2_5_10_year")
-DEFAULT_OUTPUT_DIR = Path("results/figures/fig_horizon_results_iqr")
-OUTPUT_STEM = "fig_horizon_results_iqr"
+DEFAULT_OUTPUT_DIR = Path("results/figures/fig_horizon_results_points")
+OUTPUT_STEM = "fig_horizon_results_points"
 
 DEFAULT_WIDTH_PX = 1500
 DEFAULT_HEIGHT_PX = 3000
@@ -73,10 +69,11 @@ PLASMA_MAX = 0.90
 
 CHANNEL_WIDTH = 0.30
 
-MEDIAN_MARKER_SIZE = 60
-IQR_LINEWIDTH = 1.8
-IQR_CAPSIZE = 3.8
-IQR_ALPHA = 0.84
+POINT_SIZE = 24
+POINT_ALPHA = 0.65
+MEDIAN_HALF_WIDTH = 0.06
+MEDIAN_LINEWIDTH = 2.5
+MEDIAN_HALO_LINEWIDTH = 4.0
 
 LDES_TICK_INTERVAL = 10
 MACME_TICK_INTERVAL = 5
@@ -90,7 +87,7 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description=(
             "Plot 2-, 5-, and 10-year horizon results for k-means + medoid "
-            "using median markers and IQR whiskers."
+            "using individual points and short median bars."
         )
     )
     parser.add_argument(
@@ -105,7 +102,7 @@ def parse_args() -> argparse.Namespace:
         "--output-dir",
         type=Path,
         default=DEFAULT_OUTPUT_DIR,
-        help="Directory in which the PNG, PDF, and summary CSV are written.",
+        help="Directory in which the PDF and summary CSV are written.",
     )
     parser.add_argument(
         "--k-values",
@@ -121,20 +118,20 @@ def parse_args() -> argparse.Namespace:
         "--width-px",
         type=int,
         default=DEFAULT_WIDTH_PX,
-        help=f"PNG canvas width in pixels (default: {DEFAULT_WIDTH_PX}).",
+        help=f"Canvas width in pixels (default: {DEFAULT_WIDTH_PX}).",
     )
     parser.add_argument(
         "--height-px",
         type=int,
         default=DEFAULT_HEIGHT_PX,
-        help=f"PNG canvas height in pixels (default: {DEFAULT_HEIGHT_PX}).",
+        help=f"Canvas height in pixels (default: {DEFAULT_HEIGHT_PX}).",
     )
     parser.add_argument(
         "--dpi",
         type=int,
         default=DEFAULT_DPI,
         help=(
-            f"PNG resolution in dots per inch (default: {DEFAULT_DPI}). "
+            f"Figure resolution in dots per inch (default: {DEFAULT_DPI}). "
             "Together with the pixel dimensions this also sets the physical "
             "size of the PDF figure."
         ),
@@ -362,11 +359,21 @@ def load_results(
             + "\n".join(missing_ids[:20])
         )
 
+    value_columns = ["ldes_capacity_error_pct", "capex_weighted_macme_pct"]
+    finite = np.isfinite(data[value_columns].to_numpy(dtype=float)).all(axis=1)
+    if not finite.all():
+        invalid_ids = data.loc[~finite, "case_id"].tolist()
+        raise ValueError(
+            "Non-finite values in plotted investment metrics for "
+            f"{len(invalid_ids)} selected cases. First cases:\n"
+            + "\n".join(invalid_ids[:20])
+        )
+
     return data
 
 
 def build_summary(data: pd.DataFrame) -> pd.DataFrame:
-    """Summarise each horizon / W_P channel as median and IQR."""
+    """Summarise each horizon / W_P channel for the supplementary CSV."""
     frames = []
 
     for metric_name, value_column in [
@@ -396,7 +403,7 @@ def validate_plot_inputs(
     weights = sorted(float(x) for x in data["lambda_soc"].dropna().unique())
     actual_k = sorted(int(x) for x in data["k_periods"].dropna().unique())
 
-    print("Figure 6 — Horizon sensitivity (median + IQR)")
+    print("Figure 6 — Horizon sensitivity (individual points + median)")
     print("============================================")
     print(f"Cases:       {len(data)}")
     print(f"Countries:   {countries}")
@@ -449,52 +456,64 @@ def legend_label(weight: float) -> str:
 
 def add_metric_panel(
     ax: plt.Axes,
-    summary: pd.DataFrame,
+    data: pd.DataFrame,
     *,
-    metric_name: str,
+    value_column: str,
     ylabel: str,
     panel_label: str,
     wp_colours: dict[float, object],
     wp_offsets: dict[float, float],
 ) -> None:
-    """Plot one horizon-sensitivity metric using median markers and IQR."""
+    """Plot each case at its channel centre, with a short black median bar."""
     horizon_positions = {
         horizon: float(index) for index, horizon in enumerate(HORIZON_ORDER)
     }
 
-    panel = summary.loc[summary["metric"].eq(metric_name)].copy()
-
     for horizon in HORIZON_ORDER:
-        horizon_data = panel.loc[panel["horizon_duration"].eq(horizon)]
+        horizon_data = data.loc[data["horizon_duration"].eq(horizon)]
         horizon_x = horizon_positions[horizon]
 
         for wp in WP_ORDER:
-            row = horizon_data.loc[np.isclose(horizon_data["lambda_soc"], wp)]
+            channel = horizon_data.loc[
+                np.isclose(horizon_data["lambda_soc"], wp)
+            ]
+            if channel.empty:
+                raise ValueError(
+                    f"No cases for {horizon}-year horizon and W_P={wp:g}."
+                )
 
-            if row.empty:
-                continue
-
-            row = row.iloc[0]
             centre = horizon_x + wp_offsets[wp]
+            ys = channel[value_column].to_numpy(dtype=float)
 
-            median = float(row["median"])
-            q25 = float(row["q25"])
-            q75 = float(row["q75"])
-
-            ax.errorbar(
-                centre,
-                median,
-                yerr=np.array([[median - q25], [q75 - median]]),
-                fmt="o",
-                markersize=np.sqrt(MEDIAN_MARKER_SIZE),
+            # Exactly one x-coordinate per channel: deliberately no jitter.
+            ax.scatter(
+                np.full(ys.size, centre),
+                ys,
+                s=POINT_SIZE,
                 color=wp_colours[wp],
-                ecolor=wp_colours[wp],
-                elinewidth=IQR_LINEWIDTH,
-                capsize=IQR_CAPSIZE,
-                capthick=IQR_LINEWIDTH,
-                alpha=IQR_ALPHA,
-                markeredgewidth=0,
+                alpha=POINT_ALPHA,
+                edgecolors="none",
+                zorder=2,
+            )
+
+            median = float(np.median(ys))
+            # A narrow white underlay keeps the black median visible against
+            # coloured dots, without changing the requested black marker.
+            ax.hlines(
+                median,
+                centre - MEDIAN_HALF_WIDTH,
+                centre + MEDIAN_HALF_WIDTH,
+                color="white",
+                linewidth=MEDIAN_HALO_LINEWIDTH,
                 zorder=3,
+            )
+            ax.hlines(
+                median,
+                centre - MEDIAN_HALF_WIDTH,
+                centre + MEDIAN_HALF_WIDTH,
+                color="black",
+                linewidth=MEDIAN_LINEWIDTH,
+                zorder=4,
             )
 
     positions = [horizon_positions[h] for h in HORIZON_ORDER]
@@ -532,17 +551,15 @@ def add_metric_panel(
 
 def set_padded_axis_limits(
     ax: plt.Axes,
-    summary: pd.DataFrame,
+    data: pd.DataFrame,
     *,
-    metric_name: str,
+    value_column: str,
     tick_interval: float,
     include_zero: bool,
 ) -> None:
-    """Round limits outward and add slight padding around the IQR range."""
-    panel = summary.loc[summary["metric"].eq(metric_name)]
-
-    ymin = float(panel["q25"].min())
-    ymax = float(panel["q75"].max())
+    """Round limits outward, including every plotted observation."""
+    ymin = float(data[value_column].min())
+    ymax = float(data[value_column].max())
 
     if include_zero:
         ymin = min(ymin, 0.0)
@@ -567,7 +584,7 @@ def set_padded_axis_limits(
 
 
 def make_figure(
-    summary: pd.DataFrame,
+    data: pd.DataFrame,
     *,
     width_px: int,
     height_px: int,
@@ -599,19 +616,20 @@ def make_figure(
             1,
             figsize=figsize,
             dpi=dpi,
-            sharex=True,
+            sharex=False,
             constrained_layout=False,
         )
 
         add_metric_panel(
             axes[0],
-            summary,
-            metric_name="ldes_capacity_error_pct",
+            data,
+            value_column="ldes_capacity_error_pct",
             ylabel="LDES capacity error (%)",
             panel_label="(a) LDES capacity error",
             wp_colours=wp_colours,
             wp_offsets=wp_offsets,
         )
+
 
         axes[0].axhline(
             0.0,
@@ -622,16 +640,17 @@ def make_figure(
 
         set_padded_axis_limits(
             axes[0],
-            summary,
-            metric_name="ldes_capacity_error_pct",
+            data,
+            value_column="ldes_capacity_error_pct",
             tick_interval=LDES_TICK_INTERVAL,
             include_zero=True,
         )
+        axes[0].set_ylim(top=100.0)
 
         add_metric_panel(
             axes[1],
-            summary,
-            metric_name="capex_weighted_macme_pct",
+            data,
+            value_column="capex_weighted_macme_pct",
             ylabel="CAPEX-weighted MACME (%)",
             panel_label="(b) CAPEX-weighted MACME",
             wp_colours=wp_colours,
@@ -640,8 +659,8 @@ def make_figure(
 
         set_padded_axis_limits(
             axes[1],
-            summary,
-            metric_name="capex_weighted_macme_pct",
+            data,
+            value_column="capex_weighted_macme_pct",
             tick_interval=MACME_TICK_INTERVAL,
             include_zero=True,
         )
@@ -675,7 +694,7 @@ def make_figure(
         fig.text(
             AXES_CENTER,
             0.95,
-            (r"Markers show medians; whiskers show Q25-Q75."),
+            (r"Dots show individual cases; black bars show medians."),
             ha="center",
             va="top",
             fontsize=10,
@@ -698,30 +717,17 @@ def save_outputs(
     summary: pd.DataFrame,
     *,
     output_dir: Path,
-    dpi: int,
-) -> tuple[Path, Path, Path]:
-    """Save the figure as exact-size PNG, vector PDF, and summary CSV."""
+) -> tuple[Path, Path]:
+    """Save the vector PDF and the descriptive summary CSV."""
     output_dir.mkdir(parents=True, exist_ok=True)
 
-    png_path = output_dir / f"{OUTPUT_STEM}.png"
     pdf_path = output_dir / f"{OUTPUT_STEM}.pdf"
     summary_path = output_dir / f"{OUTPUT_STEM}_summary.csv"
 
-    fig.savefig(
-        png_path,
-        dpi=dpi,
-        facecolor="white",
-    )
-    fig.savefig(
-        pdf_path,
-        facecolor="white",
-    )
-    summary.to_csv(
-        summary_path,
-        index=False,
-    )
+    fig.savefig(pdf_path, facecolor="white")
+    summary.to_csv(summary_path, index=False)
 
-    return png_path, pdf_path, summary_path
+    return pdf_path, summary_path
 
 
 def main() -> None:
@@ -739,7 +745,7 @@ def main() -> None:
     summary = build_summary(data)
 
     fig = make_figure(
-        summary,
+        data,
         width_px=args.width_px,
         height_px=args.height_px,
         dpi=args.dpi,
@@ -749,7 +755,6 @@ def main() -> None:
         fig,
         summary,
         output_dir=args.output_dir,
-        dpi=args.dpi,
     )
 
     print("\nSaved:")
