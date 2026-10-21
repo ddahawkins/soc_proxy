@@ -55,7 +55,7 @@ from matplotlib.ticker import MultipleLocator
 
 METRIC_NAME = "ldes_capacity_error_signed"
 
-DEFAULT_SOURCE_DIR = Path("results/2_5_10_year")
+DEFAULT_SOURCE_DIR = Path("results/results_2_5_10_year")
 DEFAULT_OUTPUT_DIR = Path("results/figures/fig_LDES_cap_improvement")
 OUTPUT_STEM = "fig_LDES_cap_improvement"
 
